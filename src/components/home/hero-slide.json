@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_hero_slides",
+  "info": {
+    "displayName": "Hero Slide",
+    "icon": "picture",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "solutions": {
+      "type": "json"
+    }
+  }
+}

@@ -3,7 +3,7 @@
 const fs = require('fs-extra');
 const path = require('path');
 const mime = require('mime-types');
-const { categories, authors, articles, global, about } = require('../data/data.json');
+const { categories, authors, articles, global, about, homepage, products, clients, gallery } = require('../data/data.json');
 
 async function seedExampleApp() {
   const shouldImportSeedData = await isFirstRun();
@@ -244,6 +244,10 @@ async function importSeedData() {
     author: ['find', 'findOne'],
     global: ['find', 'findOne'],
     about: ['find', 'findOne'],
+    homepage: ['find', 'findOne'],
+    product: ['find', 'findOne'],
+    client: ['find', 'findOne'],
+    gallery: ['find', 'findOne'],
   });
 
   // Create all entries
@@ -252,6 +256,63 @@ async function importSeedData() {
   await importArticles();
   await importGlobal();
   await importAbout();
+  await importProducts();
+  await importClients();
+  await importGallery();
+  await importHomepage();
+}
+
+async function importHomepage() {
+  await createEntry({
+    model: 'homepage',
+    entry: homepage,
+  });
+}
+
+async function importProducts() {
+  const defaultImage = await checkFileExistsBeforeUpload(['default-image.png']);
+  for (const product of products) {
+    await createEntry({
+      model: 'product',
+      entry: {
+        ...product,
+        image: defaultImage,
+      },
+    });
+  }
+}
+
+async function importClients() {
+  const defaultLogo = await checkFileExistsBeforeUpload(['default-image.png']);
+  for (const client of clients) {
+    await createEntry({
+      model: 'client',
+      entry: {
+        ...client,
+        logo: defaultLogo,
+      },
+    });
+  }
+}
+
+async function importGallery() {
+  const images = await checkFileExistsBeforeUpload([
+    'coffee-art.jpg',
+    'coffee-beans.jpg',
+    'coffee-shadow.jpg',
+    'beautiful-picture.jpg',
+    'we-love-pizza.jpg',
+  ]);
+  const imageList = Array.isArray(images) ? images : [images];
+  for (let i = 0; i < gallery.length; i++) {
+    await createEntry({
+      model: 'gallery',
+      entry: {
+        ...gallery[i],
+        image: imageList[i] || imageList[0],
+      },
+    });
+  }
 }
 
 async function main() {

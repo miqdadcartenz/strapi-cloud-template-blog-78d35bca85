@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_home_stat_items",
+  "info": {
+    "displayName": "Stat Item",
+    "icon": "chart-bar",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    }
+  }
+}

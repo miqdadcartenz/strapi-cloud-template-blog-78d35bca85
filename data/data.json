@@ -1,4 +1,85 @@
 {
+  "homepage": {
+    "heroSlides": [
+      {
+        "title": "Solusi Pengelolaan Pajak Daerah",
+        "solutions": [
+          "Solusi Administrasi Pengelolaan Pajak Daerah",
+          "Solusi Integrasi Pembayaran Pajak Daerah",
+          "Solusi Integrasi Data Pajak Daerah",
+          "Solusi Digitalisasi Pemetaan Pajak Daerah",
+          "Solusi Anjungan Pajak Mandiri E-Kiosk",
+          "Solusi Dashboard Command Center",
+          "Solusi Perekaman Retribusi"
+        ]
+      }
+    ],
+    "about": {
+      "badge": "Tentang Kami",
+      "title": "WE ARE CARTENZ",
+      "paragraph": "Cartenz adalah Perusahaan Teknologi Nasionalis yang membantu para pemimpin daerah dalam membangun pemerintahan yang mampu mencapai tujuan melayani masyarakat secara optimal melalui semua instrumen pemerintahan, termasuk anggaran daerah (yang harus substansial), sumber daya manusia (yang harus berkualitas tinggi), dan sistem pendukung (yang harus unggul). Tujuannya adalah untuk mencapai tujuan ini secara efisien dalam hal biaya, waktu, dan sumber daya.",
+      "ctaLabel": "Tentang Kami",
+      "employeeCount": "150+ karyawan"
+    },
+    "aboutStats": [
+      { "value": "500+", "label": "Proyek Pemerintah Daerah" },
+      { "value": "50+", "label": "Produk" },
+      { "value": "50+", "label": "IT Partner di Indonesia" },
+      { "value": "300.000+", "label": "Pengguna Public" },
+      { "value": "2.500.000+", "label": "Layanan Tersubmit" },
+      { "value": "175+", "label": "Klien" }
+    ],
+    "produkSection": {
+      "badge": "Produk",
+      "title": "INOVASI UNTUK INDONESIA",
+      "viewMoreLabel": "Lihat Selengkapnya"
+    },
+    "klienSection": {
+      "badge": "Klien",
+      "title": "PEMDA DAN KEMENTERIAN"
+    },
+    "klienStats": [
+      { "value": "150+", "label": "Kota / Kabupaten" },
+      { "value": "18+", "label": "Provinsi" },
+      { "value": "10+", "label": "Kementerian" }
+    ],
+    "galeriSection": {
+      "badge": "Galeri",
+      "title": "MEMORI PERJALANAN"
+    },
+    "artikelSection": {
+      "badge": "Artikel",
+      "title": "INFORMASI DAN INSPIRASI",
+      "viewMoreLabel": "Artikel Lainnya"
+    }
+  },
+  "products": [
+    { "title": "Solusi Online Transaction Monitoring", "category": "EFD", "order": 1 },
+    { "title": "Solusi SmartGov Revenue", "category": "SmartGov", "order": 2 },
+    { "title": "Solusi Integrasi Data Pajak Daerah", "category": "SmartGov", "order": 3 },
+    { "title": "Solusi Dashboard Command Center", "category": "OTM", "order": 4 },
+    { "title": "Solusi E-Kiosk", "category": "Palapa", "order": 5 },
+    { "title": "Solusi Perekaman Retribusi", "category": "SmartGov", "order": 6 }
+  ],
+  "clients": [
+    { "name": "DKI Jakarta", "order": 1 },
+    { "name": "Kab. Klungkung", "order": 2 },
+    { "name": "Kab. Badung", "order": 3 },
+    { "name": "Kab. Bantul", "order": 4 },
+    { "name": "Kota Denpasar", "order": 5 },
+    { "name": "Kota Bogor", "order": 6 },
+    { "name": "Kab. Bandung", "order": 7 },
+    { "name": "Kab. Aceh Tamiang", "order": 8 },
+    { "name": "Kab. Bogor", "order": 9 },
+    { "name": "Kota Banjarmasin", "order": 10 }
+  ],
+  "gallery": [
+    { "caption": "Carteamz", "subtitle": "2026", "order": 1 },
+    { "caption": "Carteamz", "subtitle": "2026", "order": 2 },
+    { "caption": "Carteamz", "subtitle": "2026", "order": 3 },
+    { "caption": "Carteamz", "subtitle": "2026", "order": 4 },
+    { "caption": "Carteamz", "subtitle": "2026", "order": 5 }
+  ],
   "global": {
     "siteName": "Strapi Blog",
     "defaultSeo": {

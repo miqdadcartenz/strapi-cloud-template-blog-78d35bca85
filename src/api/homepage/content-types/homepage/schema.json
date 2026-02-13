@@ -1,0 +1,84 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Homepage",
+    "description": "Konten halaman beranda company profile"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSlides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.hero-slide"
+    },
+    "about": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.about-section"
+    },
+    "aboutStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.stat-item"
+    },
+    "produkSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section-produk"
+    },
+    "klienSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section-klien"
+    },
+    "klienStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home.stat-item"
+    },
+    "galeriSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section-galeri"
+    },
+    "artikelSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home.section-artikel"
+    },
+    "featuredProducts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::product.product",
+      "mappedBy": "homepage",
+      "description": "Produk yang ditampilkan di beranda (optional)"
+    },
+    "featuredClients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client",
+      "mappedBy": "homepage",
+      "description": "Klien yang ditampilkan di beranda (optional)"
+    },
+    "featuredGallery": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::gallery.gallery",
+      "mappedBy": "homepage",
+      "description": "Galeri yang ditampilkan di beranda (optional)"
+    },
+    "featuredArticles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article",
+      "mappedBy": "homepage",
+      "description": "Artikel yang ditampilkan di beranda (optional)"
+    }
+  }
+}

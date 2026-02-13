@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_about_sections",
+  "info": {
+    "displayName": "About Section",
+    "icon": "user",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "paragraph": {
+      "type": "text"
+    },
+    "ctaLabel": {
+      "type": "string"
+    },
+    "employeeCount": {
+      "type": "string"
+    }
+  }
+}

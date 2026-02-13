@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "galleries",
+  "info": {
+    "singularName": "gallery",
+    "pluralName": "galleries",
+    "displayName": "Gallery",
+    "description": "Item galeri (gambar + caption) untuk section beranda"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "caption": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "featuredGallery",
+      "description": "Ditampilkan di beranda jika di-set"
+    }
+  }
+}

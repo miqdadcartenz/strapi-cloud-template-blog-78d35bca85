@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients",
+  "info": {
+    "singularName": "client",
+    "pluralName": "clients",
+    "displayName": "Client",
+    "description": "Klien (logo dan nama) untuk section beranda"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
+    },
+    "homepage": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::homepage.homepage",
+      "inversedBy": "featuredClients",
+      "description": "Ditampilkan di beranda jika di-set"
+    }
+  }
+}

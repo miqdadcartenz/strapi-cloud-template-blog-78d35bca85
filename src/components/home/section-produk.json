@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_home_section_produks",
+  "info": {
+    "displayName": "Section Produk",
+    "icon": "grid",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "viewMoreLabel": {
+      "type": "string"
+    }
+  }
+}
