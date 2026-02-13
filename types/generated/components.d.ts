@@ -24,6 +24,7 @@ export interface HomeHeroSlide extends Struct.ComponentSchema {
     icon: 'picture';
   };
   attributes: {
+    logo: Schema.Attribute.Media<'images'>;
     solutions: Schema.Attribute.JSON;
     title: Schema.Attribute.String;
   };

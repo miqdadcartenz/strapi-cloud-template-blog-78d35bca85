@@ -3,7 +3,10 @@
 const fs = require('fs-extra');
 const path = require('path');
 const mime = require('mime-types');
-const { categories, authors, articles, global, about, homepage, products, clients, gallery } = require('../data/data.json');
+
+const dataPath = path.join(__dirname, '..', 'data', 'data.json');
+const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
+const { categories, authors, articles, global, about, homepage, products, clients, gallery } = data;
 
 async function seedExampleApp() {
   const shouldImportSeedData = await isFirstRun();
@@ -168,7 +171,12 @@ async function updateBlocks(blocks) {
 
 async function importArticles() {
   for (const article of articles) {
-    const cover = await checkFileExistsBeforeUpload([`${article.slug}.jpg`]);
+    let cover = null;
+    try {
+      cover = await checkFileExistsBeforeUpload([`${article.slug}.jpg`]);
+    } catch {
+      // Cover image optional: seed continues without it
+    }
     const updatedBlocks = await updateBlocks(article.blocks);
 
     await createEntry({
