@@ -8,8 +8,17 @@ const dataPath = path.join(__dirname, '..', 'data', 'data.json');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const { categories, authors, articles, global, about, homepage, products, clients, gallery } = data;
 
+const forceReseed = process.argv.includes('--force');
+
 async function seedExampleApp() {
-  const shouldImportSeedData = await isFirstRun();
+  const shouldImportSeedData = forceReseed || (await isFirstRun());
+
+  if (forceReseed) {
+    console.log(
+      '--force: mengabaikan pengecekan initHasRun, mengimpor seed...\n' +
+        '  (Jika database sudah berisi data, sebaiknya kosongkan dulu untuk menghindari duplikat/error.)'
+    );
+  }
 
   if (shouldImportSeedData) {
     try {
@@ -34,33 +43,31 @@ async function isFirstRun() {
     name: 'setup',
   });
   const initHasRun = await pluginStore.get({ key: 'initHasRun' });
-  await pluginStore.set({ key: 'initHasRun', value: true });
+  if (!forceReseed) {
+    await pluginStore.set({ key: 'initHasRun', value: true });
+  }
   return !initHasRun;
 }
 
 async function setPublicPermissions(newPermissions) {
-  // Find the ID of the public role
   const publicRole = await strapi.query('plugin::users-permissions.role').findOne({
-    where: {
-      type: 'public',
-    },
+    where: { type: 'public' },
   });
+  if (!publicRole) return;
 
-  // Create the new permissions and link them to the public role
-  const allPermissionsToCreate = [];
-  Object.keys(newPermissions).map((controller) => {
-    const actions = newPermissions[controller];
-    const permissionsToCreate = actions.map((action) => {
-      return strapi.query('plugin::users-permissions.permission').create({
-        data: {
-          action: `api::${controller}.${controller}.${action}`,
-          role: publicRole.id,
-        },
+  for (const controller of Object.keys(newPermissions)) {
+    for (const action of newPermissions[controller]) {
+      const actionStr = `api::${controller}.${controller}.${action}`;
+      const existing = await strapi.query('plugin::users-permissions.permission').findOne({
+        where: { action: actionStr, role: publicRole.id },
       });
-    });
-    allPermissionsToCreate.push(...permissionsToCreate);
-  });
-  await Promise.all(allPermissionsToCreate);
+      if (!existing) {
+        await strapi.query('plugin::users-permissions.permission').create({
+          data: { action: actionStr, role: publicRole.id },
+        });
+      }
+    }
+  }
 }
 
 function getFileSizeInBytes(filePath) {
@@ -69,8 +76,14 @@ function getFileSizeInBytes(filePath) {
   return fileSizeInBytes;
 }
 
+const dataUploadsPath = path.join(__dirname, '..', 'data', 'uploads');
+
+function fileExistsOnDisk(fileName) {
+  return fs.existsSync(path.join(dataUploadsPath, fileName));
+}
+
 function getFileData(fileName) {
-  const filePath = path.join('data', 'uploads', fileName);
+  const filePath = path.join(dataUploadsPath, fileName);
   // Parse the file metadata
   const size = getFileSizeInBytes(filePath);
   const ext = fileName.split('.').pop();
@@ -118,6 +131,14 @@ async function checkFileExistsBeforeUpload(files) {
   const filesCopy = [...files];
 
   for (const fileName of filesCopy) {
+    // Jika file tidak ada di disk, lewati (return null untuk single file)
+    if (!fileExistsOnDisk(fileName)) {
+      if (filesCopy.length === 1) {
+        return null;
+      }
+      continue;
+    }
+
     // Check if the file already exists in Strapi
     const fileWhereName = await strapi.query('plugin::upload.file').findOne({
       where: {
@@ -137,6 +158,7 @@ async function checkFileExistsBeforeUpload(files) {
     }
   }
   const allFiles = [...existingFiles, ...uploadedFiles];
+  if (allFiles.length === 0) return filesCopy.length === 1 ? null : [];
   // If only one file then return only that file
   return allFiles.length === 1 ? allFiles[0] : allFiles;
 }
@@ -169,23 +191,29 @@ async function updateBlocks(blocks) {
   return updatedBlocks;
 }
 
-async function importArticles() {
+async function importArticles(categoryIds, authorIds) {
   for (const article of articles) {
-    let cover = null;
-    try {
-      cover = await checkFileExistsBeforeUpload([`${article.slug}.jpg`]);
-    } catch {
-      // Cover image optional: seed continues without it
-    }
+    const existing = await strapi.documents('api::article.article').findFirst({
+      where: { slug: article.slug },
+    });
+    if (existing) continue;
+
+    const cover = await checkFileExistsBeforeUpload([`${article.slug}.jpg`]);
     const updatedBlocks = await updateBlocks(article.blocks);
+    const description =
+      typeof article.description === 'string' && article.description.length > DESCRIPTION_MAX_LENGTH
+        ? article.description.slice(0, DESCRIPTION_MAX_LENGTH)
+        : article.description;
 
     await createEntry({
       model: 'article',
       entry: {
         ...article,
+        description,
+        category: { documentId: categoryIds[article.category.id - 1] },
+        author: { documentId: authorIds[article.author.id - 1] },
         cover,
         blocks: updatedBlocks,
-        // Make sure it's not a draft
         publishedAt: Date.now(),
       },
     });
@@ -193,6 +221,8 @@ async function importArticles() {
 }
 
 async function importGlobal() {
+  const existing = await strapi.documents('api::global.global').findFirst();
+  if (existing) return;
   const favicon = await checkFileExistsBeforeUpload(['favicon.png']);
   const shareImage = await checkFileExistsBeforeUpload(['default-image.png']);
   return createEntry({
@@ -200,52 +230,64 @@ async function importGlobal() {
     entry: {
       ...global,
       favicon,
-      // Make sure it's not a draft
       publishedAt: Date.now(),
-      defaultSeo: {
-        ...global.defaultSeo,
-        shareImage,
-      },
+      defaultSeo: { ...global.defaultSeo, shareImage },
     },
   });
 }
 
 async function importAbout() {
+  const existing = await strapi.documents('api::about.about').findFirst();
+  if (existing) return;
   const updatedBlocks = await updateBlocks(about.blocks);
-
   await createEntry({
     model: 'about',
-    entry: {
-      ...about,
-      blocks: updatedBlocks,
-      // Make sure it's not a draft
-      publishedAt: Date.now(),
-    },
+    entry: { ...about, blocks: updatedBlocks, publishedAt: Date.now() },
   });
 }
 
+const DESCRIPTION_MAX_LENGTH = 80;
+
+/** Get or create category by slug; return array of category ids (urutan sama dengan data.categories). */
 async function importCategories() {
+  const ids = [];
   for (const category of categories) {
-    await createEntry({ model: 'category', entry: category });
+    let doc = await strapi.documents('api::category.category').findFirst({
+      where: { slug: category.slug },
+    });
+    if (doc) {
+      ids.push(doc.documentId ?? doc.id);
+    } else {
+      const created = await strapi.documents('api::category.category').create({
+        data: category,
+      });
+      ids.push(created.documentId ?? created.id);
+    }
   }
+  return ids;
 }
 
+/** Get or create author; return array of author ids (urutan sama dengan data.authors). */
 async function importAuthors() {
+  const ids = [];
   for (const author of authors) {
-    const avatar = await checkFileExistsBeforeUpload([author.avatar]);
-
-    await createEntry({
-      model: 'author',
-      entry: {
-        ...author,
-        avatar,
-      },
+    let doc = await strapi.documents('api::author.author').findFirst({
+      where: { email: author.email },
     });
+    if (doc) {
+      ids.push(doc.documentId ?? doc.id);
+    } else {
+      const avatar = await checkFileExistsBeforeUpload([author.avatar]);
+      const created = await strapi.documents('api::author.author').create({
+        data: { ...author, avatar },
+      });
+      ids.push(created.documentId ?? created.id);
+    }
   }
+  return ids;
 }
 
 async function importSeedData() {
-  // Allow read of application content types
   await setPublicPermissions({
     article: ['find', 'findOne'],
     category: ['find', 'findOne'],
@@ -258,10 +300,9 @@ async function importSeedData() {
     gallery: ['find', 'findOne'],
   });
 
-  // Create all entries
-  await importCategories();
-  await importAuthors();
-  await importArticles();
+  const categoryIds = await importCategories();
+  const authorIds = await importAuthors();
+  await importArticles(categoryIds, authorIds);
   await importGlobal();
   await importAbout();
   await importProducts();
@@ -271,21 +312,21 @@ async function importSeedData() {
 }
 
 async function importHomepage() {
-  await createEntry({
-    model: 'homepage',
-    entry: homepage,
-  });
+  const existing = await strapi.documents('api::homepage.homepage').findFirst();
+  if (existing) return;
+  await createEntry({ model: 'homepage', entry: homepage });
 }
 
 async function importProducts() {
   const defaultImage = await checkFileExistsBeforeUpload(['default-image.png']);
   for (const product of products) {
+    const existing = await strapi.documents('api::product.product').findFirst({
+      where: { title: product.title },
+    });
+    if (existing) continue;
     await createEntry({
       model: 'product',
-      entry: {
-        ...product,
-        image: defaultImage,
-      },
+      entry: { ...product, image: defaultImage },
     });
   }
 }
@@ -293,12 +334,13 @@ async function importProducts() {
 async function importClients() {
   const defaultLogo = await checkFileExistsBeforeUpload(['default-image.png']);
   for (const client of clients) {
+    const existing = await strapi.documents('api::client.client').findFirst({
+      where: { name: client.name },
+    });
+    if (existing) continue;
     await createEntry({
       model: 'client',
-      entry: {
-        ...client,
-        logo: defaultLogo,
-      },
+      entry: { ...client, logo: defaultLogo },
     });
   }
 }
@@ -311,13 +353,14 @@ async function importGallery() {
     'beautiful-picture.jpg',
     'we-love-pizza.jpg',
   ]);
-  const imageList = Array.isArray(images) ? images : [images];
+  const imageList = Array.isArray(images) ? images : images ? [images] : [];
   for (let i = 0; i < gallery.length; i++) {
+    const image = imageList[i] || imageList[0] || null;
     await createEntry({
       model: 'gallery',
       entry: {
         ...gallery[i],
-        image: imageList[i] || imageList[0],
+        image,
       },
     });
   }
