@@ -8,6 +8,7 @@
     "deploy": "strapi deploy",
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
+    "fix:tab-json": "node ./scripts/fix-tab-content-json.js",
     "start": "strapi start",
     "strapi": "strapi"
   },
