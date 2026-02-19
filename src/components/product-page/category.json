@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_product_page_categories",
+  "info": {
+    "displayName": "Category",
+    "icon": "layer-group",
+    "description": "Kategori produk (accordion sidebar): label, megaMenuChildId, subMenus"
+  },
+  "options": {},
+  "attributes": {
+    "categoryId": {
+      "type": "string",
+      "description": "Unik dalam satu halaman produk (untuk state sidebar)"
+    },
+    "label": {
+      "type": "string"
+    },
+    "megaMenuChildId": {
+      "type": "string",
+      "description": "Id dari MegaMenu Level 2 (untuk deep link)"
+    },
+    "sidebarAsFlat": {
+      "type": "boolean",
+      "default": false,
+      "description": "True untuk EFD/Palapa: sidebar hanya daftar subMenus tanpa accordion"
+    },
+    "subMenus": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-page.sub-menu"
+    }
+  }
+}

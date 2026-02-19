@@ -4,6 +4,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const mime = require('mime-types');
 const { categories, authors, articles, global, about, homepage, products, clients, gallery } = require('../data/data.json');
+const productPages = require('../data/product-pages.json');
 
 async function seedExampleApp() {
   const shouldImportSeedData = await isFirstRun();
@@ -66,19 +67,24 @@ function getFileSizeInBytes(filePath) {
   return fileSizeInBytes;
 }
 
-function getFileData(fileName) {
-  const filePath = path.join('data', 'uploads', fileName);
-  // Parse the file metadata
-  const size = getFileSizeInBytes(filePath);
-  const ext = fileName.split('.').pop();
-  const mimeType = mime.lookup(ext || '') || '';
+const dataUploadsPath = path.join(__dirname, '..', 'data', 'uploads');
 
-  return {
-    filepath: filePath,
-    originalFileName: fileName,
-    size,
-    mimetype: mimeType,
-  };
+function getFileData(fileName) {
+  const filePath = path.join(dataUploadsPath, fileName);
+  try {
+    if (!fs.existsSync(filePath)) return null;
+    const size = getFileSizeInBytes(filePath);
+    const ext = fileName.split('.').pop();
+    const mimeType = mime.lookup(ext || '') || '';
+    return {
+      filepath: filePath,
+      originalFileName: fileName,
+      size,
+      mimetype: mimeType,
+    };
+  } catch {
+    return null;
+  }
 }
 
 async function uploadFile(file, name) {
@@ -109,13 +115,20 @@ async function createEntry({ model, entry }) {
   }
 }
 
+function fileExistsOnDisk(fileName) {
+  return fs.existsSync(path.join(dataUploadsPath, fileName));
+}
+
 async function checkFileExistsBeforeUpload(files) {
   const existingFiles = [];
   const uploadedFiles = [];
   const filesCopy = [...files];
 
   for (const fileName of filesCopy) {
-    // Check if the file already exists in Strapi
+    if (!fileExistsOnDisk(fileName)) {
+      if (filesCopy.length === 1) return null;
+      continue;
+    }
     const fileWhereName = await strapi.query('plugin::upload.file').findOne({
       where: {
         name: fileName.replace(/\..*$/, ''),
@@ -123,18 +136,20 @@ async function checkFileExistsBeforeUpload(files) {
     });
 
     if (fileWhereName) {
-      // File exists, don't upload it
       existingFiles.push(fileWhereName);
     } else {
-      // File doesn't exist, upload it
       const fileData = getFileData(fileName);
+      if (!fileData) {
+        if (filesCopy.length === 1) return null;
+        continue;
+      }
       const fileNameNoExtension = fileName.split('.').shift();
       const [file] = await uploadFile(fileData, fileNameNoExtension);
       uploadedFiles.push(file);
     }
   }
   const allFiles = [...existingFiles, ...uploadedFiles];
-  // If only one file then return only that file
+  if (allFiles.length === 0) return filesCopy.length === 1 ? null : [];
   return allFiles.length === 1 ? allFiles[0] : allFiles;
 }
 
@@ -166,18 +181,26 @@ async function updateBlocks(blocks) {
   return updatedBlocks;
 }
 
-async function importArticles() {
+const DESCRIPTION_MAX_LENGTH = 80;
+
+async function importArticles(categoryIds, authorIds) {
   for (const article of articles) {
     const cover = await checkFileExistsBeforeUpload([`${article.slug}.jpg`]);
-    const updatedBlocks = await updateBlocks(article.blocks);
+    const updatedBlocks = await updateBlocks(article.blocks || []);
+    const description =
+      typeof article.description === 'string' && article.description.length > DESCRIPTION_MAX_LENGTH
+        ? article.description.slice(0, DESCRIPTION_MAX_LENGTH)
+        : article.description;
 
     await createEntry({
       model: 'article',
       entry: {
         ...article,
+        description,
+        category: categoryIds && article.category ? { documentId: categoryIds[article.category.id - 1] } : undefined,
+        author: authorIds && article.author ? { documentId: authorIds[article.author.id - 1] } : undefined,
         cover,
         blocks: updatedBlocks,
-        // Make sure it's not a draft
         publishedAt: Date.now(),
       },
     });
@@ -185,6 +208,8 @@ async function importArticles() {
 }
 
 async function importGlobal() {
+  const existing = await strapi.documents('api::global.global').findFirst();
+  if (existing) return;
   const favicon = await checkFileExistsBeforeUpload(['favicon.png']);
   const shareImage = await checkFileExistsBeforeUpload(['default-image.png']);
   return createEntry({
@@ -192,7 +217,6 @@ async function importGlobal() {
     entry: {
       ...global,
       favicon,
-      // Make sure it's not a draft
       publishedAt: Date.now(),
       defaultSeo: {
         ...global.defaultSeo,
@@ -203,37 +227,56 @@ async function importGlobal() {
 }
 
 async function importAbout() {
-  const updatedBlocks = await updateBlocks(about.blocks);
-
+  const existing = await strapi.documents('api::about.about').findFirst();
+  if (existing) return;
+  const updatedBlocks = await updateBlocks(about.blocks || []);
   await createEntry({
     model: 'about',
     entry: {
       ...about,
       blocks: updatedBlocks,
-      // Make sure it's not a draft
       publishedAt: Date.now(),
     },
   });
 }
 
+/** Return array of documentIds (urutan sama dengan data.categories). */
 async function importCategories() {
+  const ids = [];
   for (const category of categories) {
-    await createEntry({ model: 'category', entry: category });
+    let doc = await strapi.documents('api::category.category').findFirst({
+      where: { slug: category.slug },
+    });
+    if (doc) {
+      ids.push(doc.documentId ?? doc.id);
+    } else {
+      const created = await strapi.documents('api::category.category').create({
+        data: category,
+      });
+      ids.push(created.documentId ?? created.id);
+    }
   }
+  return ids;
 }
 
+/** Return array of documentIds (urutan sama dengan data.authors). */
 async function importAuthors() {
+  const ids = [];
   for (const author of authors) {
-    const avatar = await checkFileExistsBeforeUpload([author.avatar]);
-
-    await createEntry({
-      model: 'author',
-      entry: {
-        ...author,
-        avatar,
-      },
+    let doc = await strapi.documents('api::author.author').findFirst({
+      where: { email: author.email },
     });
+    if (doc) {
+      ids.push(doc.documentId ?? doc.id);
+    } else {
+      const avatar = await checkFileExistsBeforeUpload([author.avatar]);
+      const created = await strapi.documents('api::author.author').create({
+        data: { ...author, avatar },
+      });
+      ids.push(created.documentId ?? created.id);
+    }
   }
+  return ids;
 }
 
 async function importSeedData() {
@@ -248,30 +291,50 @@ async function importSeedData() {
     product: ['find', 'findOne'],
     client: ['find', 'findOne'],
     gallery: ['find', 'findOne'],
+    'product-page': ['find', 'findOne'],
   });
 
-  // Create all entries
-  await importCategories();
-  await importAuthors();
-  await importArticles();
+  const categoryIds = await importCategories();
+  const authorIds = await importAuthors();
+  await importArticles(categoryIds, authorIds);
   await importGlobal();
   await importAbout();
   await importProducts();
   await importClients();
   await importGallery();
   await importHomepage();
+  await importProductPages();
 }
 
 async function importHomepage() {
+  const existing = await strapi.documents('api::homepage.homepage').findFirst();
+  if (existing) return;
   await createEntry({
     model: 'homepage',
     entry: homepage,
   });
 }
 
+async function importProductPages() {
+  for (const page of productPages) {
+    const existing = await strapi.documents('api::product-page.product-page').findFirst({
+      where: { slug: page.slug },
+    });
+    if (existing) continue;
+    await createEntry({
+      model: 'product-page',
+      entry: page,
+    });
+  }
+}
+
 async function importProducts() {
   const defaultImage = await checkFileExistsBeforeUpload(['default-image.png']);
   for (const product of products) {
+    const existing = await strapi.documents('api::product.product').findFirst({
+      where: { title: product.title },
+    });
+    if (existing) continue;
     await createEntry({
       model: 'product',
       entry: {
@@ -285,6 +348,10 @@ async function importProducts() {
 async function importClients() {
   const defaultLogo = await checkFileExistsBeforeUpload(['default-image.png']);
   for (const client of clients) {
+    const existing = await strapi.documents('api::client.client').findFirst({
+      where: { name: client.name },
+    });
+    if (existing) continue;
     await createEntry({
       model: 'client',
       entry: {
@@ -303,13 +370,14 @@ async function importGallery() {
     'beautiful-picture.jpg',
     'we-love-pizza.jpg',
   ]);
-  const imageList = Array.isArray(images) ? images : [images];
+  const imageList = Array.isArray(images) ? images : images ? [images] : [];
   for (let i = 0; i < gallery.length; i++) {
+    const image = imageList[i] || imageList[0] || null;
     await createEntry({
       model: 'gallery',
       entry: {
         ...gallery[i],
-        image: imageList[i] || imageList[0],
+        image,
       },
     });
   }

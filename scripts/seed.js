@@ -7,6 +7,7 @@ const mime = require('mime-types');
 const dataPath = path.join(__dirname, '..', 'data', 'data.json');
 const data = JSON.parse(fs.readFileSync(dataPath, 'utf8'));
 const { categories, authors, articles, global, about, homepage, products, clients, gallery } = data;
+const productPages = require(path.join(__dirname, '..', 'data', 'product-pages.json'));
 
 const forceReseed = process.argv.includes('--force');
 
@@ -298,6 +299,7 @@ async function importSeedData() {
     product: ['find', 'findOne'],
     client: ['find', 'findOne'],
     gallery: ['find', 'findOne'],
+    'product-page': ['find', 'findOne'],
   });
 
   const categoryIds = await importCategories();
@@ -309,12 +311,23 @@ async function importSeedData() {
   await importClients();
   await importGallery();
   await importHomepage();
+  await importProductPages();
 }
 
 async function importHomepage() {
   const existing = await strapi.documents('api::homepage.homepage').findFirst();
   if (existing) return;
   await createEntry({ model: 'homepage', entry: homepage });
+}
+
+async function importProductPages() {
+  for (const page of productPages) {
+    const existing = await strapi.documents('api::product-page.product-page').findFirst({
+      where: { slug: page.slug },
+    });
+    if (existing) continue;
+    await createEntry({ model: 'product-page', entry: page });
+  }
 }
 
 async function importProducts() {

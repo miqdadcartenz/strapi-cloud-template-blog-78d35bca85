@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_page_block_lists",
+  "info": {
+    "displayName": "Block List",
+    "icon": "list",
+    "description": "Daftar item dalam blok konten tab"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": false
+    },
+    "items": {
+      "type": "json",
+      "description": "Array of strings"
+    }
+  }
+}

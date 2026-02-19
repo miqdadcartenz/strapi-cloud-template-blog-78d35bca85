@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "smartgov",
+    "hero": {
+      "title": "Solusi Pengelolaan Pajak Daerah Kota/Kabupaten",
+      "paragraphs": [
+        { "text": "SmartGov merupakan satu portal aplikasi yang terdiri berbagai jenis pajak seperti PBB-P2, BPHTB, Pajak Hotel, Pajak Restoran, Pajak Parkir, Pajak Hiburan, Pajak Mineral, Pajak Walet, Pajak Air Tanah, Pajak Reklame, HKPD, PBJT, serta Retribusi menjadi satu kesatuan." }
+      ],
+      "demoUrl": "https://smartgov.cartenz.com"
+    },
+    "categories": [
+      {
+        "categoryId": "cat-01",
+        "label": "Sistem Pengelolaan Pajak Daerah Kota/Kabupaten",
+        "megaMenuChildId": "sistem-kota-kab",
+        "sidebarAsFlat": false,
+        "subMenus": [
+          {
+            "subSlug": "pajak-bumi-bangunan",
+            "title": "Sistem Pengelolaan Pajak Bumi dan Bangunan Perdesaan dan Perkotaan",
+            "tabs": [
+              {
+                "tabLabel": "Sistem Pengelolaan Objek Pajak Spasial",
+                "content": {
+                  "description": "Solusi berbasis web untuk mendigitalisasikan proses pelayanan administrasi pajak daerah mulai dari pendataan, pelaporan, penetapan, penghitungan pajak, penerimaan dan laporan penerimaan pajak daerah sesuai dengan UU HKPD. Tambahkan blok (paragraf, heading, list) lewat CMS jika perlu.",
+                  "details": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "efd",
+    "hero": {
+      "title": "Solusi Monitoring Pajak Daerah",
+      "paragraphs": [
+        { "text": "EFD (Electronic Fiscal Device) adalah sistem yang digunakan oleh pemerintah daerah untuk memantau pendapatan para wajib pajak. Tujuan utama dari penggunaan EFD adalah memastikan bahwa setiap transaksi terekam secara akurat." }
+      ],
+      "demoUrl": "https://smartgov.cartenz.com"
+    },
+    "categories": [
+      {
+        "categoryId": "detail",
+        "label": "Solusi yang kami tawarkan",
+        "sidebarAsFlat": true,
+        "subMenus": [
+          {
+            "subSlug": "efd-pajak-bjtt",
+            "title": "Sistem pengawasan Objek Pajak Barang dan Jasa Tertentu",
+            "tabs": [
+              {
+                "tabLabel": "Sistem pengawasan Objek Pajak Barang dan Jasa Tertentu",
+                "content": {
+                  "description": "Solusi ini merekam dan memonitor transaksi wajib pajak hotel, restoran, kafe, hiburan, parkir, dan lainnya. Tambahkan blok (heading, list) lewat CMS.",
+                  "details": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "palapa",
+    "hero": {
+      "title": "Digitalisasi Layanan Pemerintah Terintegrasi",
+      "paragraphs": [
+        { "text": "Palapa bertujuan untuk membuat proses layanan instansi pemerintah menjadi lebih efektif, efisien, praktis serta mendekatkan layanan pemerintah ke masyarakat dalam satu sistem." }
+      ],
+      "demoUrl": "https://smartgov.cartenz.com"
+    },
+    "categories": [
+      {
+        "categoryId": "detail",
+        "label": "Solusi yang kami tawarkan",
+        "sidebarAsFlat": true,
+        "subMenus": [
+          {
+            "subSlug": "palapa-kendali-kinerja",
+            "title": "Kendali Kinerja dan Pelayanan Pemerintah",
+            "tabs": [
+              {
+                "tabLabel": "Kendali Kinerja dan Pelayanan Pemerintah",
+                "content": {
+                  "description": "Memastikan kinerja pelayanan pemerintah berjalan sesuai prosedur tanpa khawatir keterlambatan kendala serta OPD bergerak sendiri-sendiri. Tambahkan blok lewat CMS.",
+                  "details": []
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "slug": "strategic-consulting",
+    "hero": {
+      "title": "Layanan Konsultasi dan Project",
+      "paragraphs": [
+        { "text": "Cartenz mulai secara aktif mengikuti kegiatan project sebagai salah satu layanan utama pada tahun 2022. Project Consultant bertujuan untuk memberikan layanan konsultasi dan rekomendasi, khususnya di bidang teknologi informasi, kepada seluruh tingkat instansi pemerintahan." }
+      ],
+      "demoUrl": "https://smartgov.cartenz.com"
+    },
+    "categories": []
+  }
+]

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_product_page_sub_menus",
+  "info": {
+    "displayName": "Sub Menu",
+    "icon": "list-ul",
+    "description": "Sub menu (sidebar item) dengan daftar tab"
+  },
+  "options": {},
+  "attributes": {
+    "subSlug": {
+      "type": "string",
+      "description": "Unik dalam satu produk (digunakan di URL sebagai subSlug)"
+    },
+    "title": {
+      "type": "string"
+    },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-page.tab"
+    }
+  }
+}

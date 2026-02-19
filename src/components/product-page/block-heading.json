@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_page_block_headings",
+  "info": {
+    "displayName": "Block Heading",
+    "icon": "heading",
+    "description": "Heading (h1–h4) dalam blok konten tab"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": ["1", "2", "3", "4"],
+      "default": "4"
+    }
+  }
+}

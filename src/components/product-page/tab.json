@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_product_page_tabs",
+  "info": {
+    "displayName": "Tab",
+    "icon": "folder",
+    "description": "Satu tab dalam sub-menu (label + konten)"
+  },
+  "options": {},
+  "attributes": {
+    "tabLabel": {
+      "type": "string"
+    },
+    "content": {
+      "type": "component",
+      "repeatable": false,
+      "component": "product-page.tab-content"
+    }
+  }
+}

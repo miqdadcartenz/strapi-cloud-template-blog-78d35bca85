@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_product_page_paragraphs",
+  "info": {
+    "displayName": "Paragraph",
+    "icon": "file-alt",
+    "description": "Satu paragraf teks untuk hero product page"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    }
+  }
+}

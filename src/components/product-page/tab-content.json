@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_product_page_tab_contents",
+  "info": {
+    "displayName": "Tab Content",
+    "icon": "file-alt",
+    "description": "Konten satu tab: deskripsi, gambar, detail, blocks"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "details": {
+      "type": "json",
+      "description": "Array of strings (bullet points)"
+    },
+    "blocks": {
+      "type": "dynamiczone",
+      "components": [
+        "product-page.block-paragraph",
+        "product-page.block-heading",
+        "product-page.block-list"
+      ]
+    }
+  }
+}

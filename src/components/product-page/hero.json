@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_product_page_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "star",
+    "description": "Hero section halaman produk: judul, paragraf, demo URL, logo, gambar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "product-page.paragraph"
+    },
+    "demoUrl": {
+      "type": "string"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
