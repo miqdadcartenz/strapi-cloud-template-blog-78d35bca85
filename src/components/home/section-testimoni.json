@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_section_testimonis",
+  "info": {
+    "displayName": "Section Testimoni"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "text"
+    },
+    "name": {
+      "type": "string"
+    },
+    "posisi": {
+      "type": "string"
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  },
+  "config": {}
+}

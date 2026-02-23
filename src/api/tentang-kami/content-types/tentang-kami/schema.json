@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "tentang_kamis",
+  "info": {
+    "singularName": "tentang-kami",
+    "pluralName": "tentang-kamis",
+    "displayName": "Tentang Kami"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sejarah": {
+      "type": "text"
+    },
+    "visi": {
+      "type": "text"
+    },
+    "nilai_inti_title": {
+      "type": "string"
+    },
+    "nilai_inti_items": {
+      "type": "component",
+      "component": "tentang-kami.nilai-inti-item",
+      "repeatable": true
+    },
+    "tim_kami_subtitle": {
+      "type": "string"
+    },
+    "tim_kami_members": {
+      "type": "component",
+      "component": "tentang-kami.team-member",
+      "repeatable": true
+    },
+    "bento_images": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    }
+  }
+}

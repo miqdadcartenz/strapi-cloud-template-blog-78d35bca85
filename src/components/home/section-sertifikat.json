@@ -1,0 +1,46 @@
+{
+  "collectionName": "components_home_section_sertifikats",
+  "info": {
+    "displayName": "Section Sertifikat"
+  },
+  "options": {},
+  "attributes": {
+    "logo1": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo2": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description1": {
+      "type": "text"
+    },
+    "logo3": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "description2": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

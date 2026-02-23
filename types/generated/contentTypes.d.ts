@@ -781,6 +781,50 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiTentangKamiTentangKami extends Struct.SingleTypeSchema {
+  collectionName: 'tentang_kamis';
+  info: {
+    displayName: 'Tentang Kami';
+    pluralName: 'tentang-kamis';
+    singularName: 'tentang-kami';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    bento_images: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::tentang-kami.tentang-kami'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    nilai_inti_items: Schema.Attribute.Component<
+      'tentang-kami.nilai-inti-item',
+      true
+    >;
+    nilai_inti_title: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    sejarah: Schema.Attribute.Text;
+    tim_kami_members: Schema.Attribute.Component<
+      'tentang-kami.team-member',
+      true
+    >;
+    tim_kami_subtitle: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    visi: Schema.Attribute.Text;
+  };
+}
+
 export interface PluginContentReleasesRelease
   extends Struct.CollectionTypeSchema {
   collectionName: 'strapi_releases';
@@ -1301,6 +1345,7 @@ declare module '@strapi/strapi' {
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::product-page.product-page': ApiProductPageProductPage;
       'api::product.product': ApiProductProduct;
+      'api::tentang-kami.tentang-kami': ApiTentangKamiTentangKami;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

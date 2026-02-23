@@ -15,6 +15,9 @@
     },
     "viewMoreLabel": {
       "type": "string"
+    },
+    "linkProduk": {
+      "type": "string"
     }
   }
 }

@@ -39,6 +39,7 @@ export interface HomeSectionArtikel extends Struct.ComponentSchema {
   };
   attributes: {
     badge: Schema.Attribute.String;
+    linkArtikel: Schema.Attribute.String;
     title: Schema.Attribute.String;
     viewMoreLabel: Schema.Attribute.String;
   };
@@ -79,8 +80,36 @@ export interface HomeSectionProduk extends Struct.ComponentSchema {
   };
   attributes: {
     badge: Schema.Attribute.String;
+    linkProduk: Schema.Attribute.String;
     title: Schema.Attribute.String;
     viewMoreLabel: Schema.Attribute.String;
+  };
+}
+
+export interface HomeSectionSertifikat extends Struct.ComponentSchema {
+  collectionName: 'components_home_section_sertifikats';
+  info: {
+    displayName: 'Section Sertifikat';
+  };
+  attributes: {
+    description1: Schema.Attribute.Text;
+    description2: Schema.Attribute.Text;
+    logo1: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo2: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo3: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
+export interface HomeSectionTestimoni extends Struct.ComponentSchema {
+  collectionName: 'components_home_section_testimonis';
+  info: {
+    displayName: 'Section Testimoni';
+  };
+  attributes: {
+    foto: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+    posisi: Schema.Attribute.String;
+    text: Schema.Attribute.Text;
   };
 }
 
@@ -290,6 +319,31 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface TentangKamiNilaiIntiItem extends Struct.ComponentSchema {
+  collectionName: 'components_tentang_kami_nilai_inti_items';
+  info: {
+    displayName: 'Nilai Inti Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    icon: Schema.Attribute.String;
+    letter: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface TentangKamiTeamMember extends Struct.ComponentSchema {
+  collectionName: 'components_tentang_kami_team_members';
+  info: {
+    displayName: 'Team Member';
+  };
+  attributes: {
+    jabatan: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+    photo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+  };
+}
+
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
@@ -299,6 +353,8 @@ declare module '@strapi/strapi' {
       'home.section-galeri': HomeSectionGaleri;
       'home.section-klien': HomeSectionKlien;
       'home.section-produk': HomeSectionProduk;
+      'home.section-sertifikat': HomeSectionSertifikat;
+      'home.section-testimoni': HomeSectionTestimoni;
       'home.stat-item': HomeStatItem;
       'product-page.block-heading': ProductPageBlockHeading;
       'product-page.block-list': ProductPageBlockList;
@@ -314,6 +370,8 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'tentang-kami.nilai-inti-item': TentangKamiNilaiIntiItem;
+      'tentang-kami.team-member': TentangKamiTeamMember;
     }
   }
 }

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_tentang_kami_nilai_inti_items",
+  "info": {
+    "displayName": "Nilai Inti Item"
+  },
+  "options": {},
+  "attributes": {
+    "letter": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}
