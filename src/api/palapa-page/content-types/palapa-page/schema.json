@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "palapa_pages",
+  "info": {
+    "singularName": "palapa-page",
+    "pluralName": "palapa-pages",
+    "displayName": "Palapa Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "component": "product-page.hero",
+      "repeatable": false
+    },
+    "Klien": {
+      "type": "component",
+      "component": "palapa-klien.palapa-klien-section",
+      "repeatable": false
+    }
+  }
+}

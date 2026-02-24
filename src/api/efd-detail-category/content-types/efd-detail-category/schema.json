@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "efd_detail_categories",
+  "info": {
+    "singularName": "efd-detail-category",
+    "pluralName": "efd-detail-categories",
+    "displayName": "EFD Detail Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryId": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "megaMenuChildId": {
+      "type": "string"
+    },
+    "sidebarAsFlat": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenus": {
+      "type": "component",
+      "component": "product-page.sub-menu",
+      "repeatable": true
+    }
+  }
+}

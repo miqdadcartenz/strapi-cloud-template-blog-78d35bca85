@@ -300,6 +300,14 @@ async function importSeedData() {
     client: ['find', 'findOne'],
     gallery: ['find', 'findOne'],
     'product-page': ['find', 'findOne'],
+    // API halaman produk (per produk)
+    'smartgov-page': ['find', 'findOne'],
+    'smartgov-detail-category': ['find', 'findOne'],
+    'efd-page': ['find', 'findOne'],
+    'efd-detail-category': ['find', 'findOne'],
+    'palapa-page': ['find', 'findOne'],
+    'palapa-detail-category': ['find', 'findOne'],
+    'strategic-consulting-page': ['find', 'findOne'],
   });
 
   const categoryIds = await importCategories();

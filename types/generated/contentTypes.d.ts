@@ -596,6 +596,72 @@ export interface ApiClientClient extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiEfdDetailCategoryEfdDetailCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'efd_detail_categories';
+  info: {
+    displayName: 'EFD Detail Category';
+    pluralName: 'efd-detail-categories';
+    singularName: 'efd-detail-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoryId: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::efd-detail-category.efd-detail-category'
+    > &
+      Schema.Attribute.Private;
+    megaMenuChildId: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    sidebarAsFlat: Schema.Attribute.Boolean;
+    subMenus: Schema.Attribute.Component<'product-page.sub-menu', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiEfdPageEfdPage extends Struct.SingleTypeSchema {
+  collectionName: 'efd_pages';
+  info: {
+    displayName: 'EFD Page';
+    pluralName: 'efd-pages';
+    singularName: 'efd-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredClients: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::client.client'
+    >;
+    Hero: Schema.Attribute.Component<'product-page.hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::efd-page.efd-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGalleryGallery extends Struct.CollectionTypeSchema {
   collectionName: 'galleries';
   info: {
@@ -714,6 +780,72 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiPalapaDetailCategoryPalapaDetailCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'palapa_detail_categories';
+  info: {
+    displayName: 'Palapa Detail Category';
+    pluralName: 'palapa-detail-categories';
+    singularName: 'palapa-detail-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoryId: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::palapa-detail-category.palapa-detail-category'
+    > &
+      Schema.Attribute.Private;
+    megaMenuChildId: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    sidebarAsFlat: Schema.Attribute.Boolean;
+    subMenus: Schema.Attribute.Component<'product-page.sub-menu', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiPalapaPagePalapaPage extends Struct.SingleTypeSchema {
+  collectionName: 'palapa_pages';
+  info: {
+    displayName: 'Palapa Page';
+    pluralName: 'palapa-pages';
+    singularName: 'palapa-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Hero: Schema.Attribute.Component<'product-page.hero', false>;
+    Klien: Schema.Attribute.Component<
+      'palapa-klien.palapa-klien-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::palapa-page.palapa-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProductPageProductPage extends Struct.CollectionTypeSchema {
   collectionName: 'product_pages';
   info: {
@@ -775,6 +907,106 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     order: Schema.Attribute.Integer & Schema.Attribute.DefaultTo<0>;
     publishedAt: Schema.Attribute.DateTime;
     title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSmartgovDetailCategorySmartgovDetailCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'smartgov_detail_categories';
+  info: {
+    displayName: 'Smartgov Detail Category';
+    pluralName: 'smartgov-detail-categories';
+    singularName: 'smartgov-detail-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoryId: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::smartgov-detail-category.smartgov-detail-category'
+    > &
+      Schema.Attribute.Private;
+    megaMenuChildId: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    sidebarAsFlat: Schema.Attribute.Boolean;
+    subMenus: Schema.Attribute.Component<'product-page.sub-menu', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiSmartgovPageSmartgovPage extends Struct.SingleTypeSchema {
+  collectionName: 'smartgov_pages';
+  info: {
+    displayName: 'Smartgov Page';
+    pluralName: 'smartgov-pages';
+    singularName: 'smartgov-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    featuredClients: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::client.client'
+    >;
+    Hero: Schema.Attribute.Component<'product-page.hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::smartgov-page.smartgov-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiStrategicConsultingPageStrategicConsultingPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'strategic_consulting_pages';
+  info: {
+    displayName: 'Strategic Consulting Page';
+    pluralName: 'strategic-consulting-pages';
+    singularName: 'strategic-consulting-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    clients: Schema.Attribute.Relation<'oneToMany', 'api::client.client'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Hero: Schema.Attribute.Component<'product-page.hero', false>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::strategic-consulting-page.strategic-consulting-page'
+    > &
+      Schema.Attribute.Private;
+    ProjectCard: Schema.Attribute.Component<
+      'strategic-consulting.strategic-project',
+      true
+    >;
+    publishedAt: Schema.Attribute.DateTime;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1340,11 +1572,18 @@ declare module '@strapi/strapi' {
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
       'api::client.client': ApiClientClient;
+      'api::efd-detail-category.efd-detail-category': ApiEfdDetailCategoryEfdDetailCategory;
+      'api::efd-page.efd-page': ApiEfdPageEfdPage;
       'api::gallery.gallery': ApiGalleryGallery;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::palapa-detail-category.palapa-detail-category': ApiPalapaDetailCategoryPalapaDetailCategory;
+      'api::palapa-page.palapa-page': ApiPalapaPagePalapaPage;
       'api::product-page.product-page': ApiProductPageProductPage;
       'api::product.product': ApiProductProduct;
+      'api::smartgov-detail-category.smartgov-detail-category': ApiSmartgovDetailCategorySmartgovDetailCategory;
+      'api::smartgov-page.smartgov-page': ApiSmartgovPageSmartgovPage;
+      'api::strategic-consulting-page.strategic-consulting-page': ApiStrategicConsultingPageStrategicConsultingPage;
       'api::tentang-kami.tentang-kami': ApiTentangKamiTentangKami;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

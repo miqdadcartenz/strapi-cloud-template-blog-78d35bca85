@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_palapa_klien_palapa_klien_cards",
+  "info": {
+    "displayName": "Palapa Klien Card"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "nama_daerah": {
+      "type": "string"
+    },
+    "produk_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

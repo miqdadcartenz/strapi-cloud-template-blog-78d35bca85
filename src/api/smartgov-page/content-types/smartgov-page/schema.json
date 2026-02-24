@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "smartgov_pages",
+  "info": {
+    "singularName": "smartgov-page",
+    "pluralName": "smartgov-pages",
+    "displayName": "Smartgov Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "component": "product-page.hero",
+      "repeatable": false
+    },
+    "featuredClients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    }
+  }
+}

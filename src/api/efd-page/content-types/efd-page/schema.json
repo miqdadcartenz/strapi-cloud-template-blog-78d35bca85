@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "efd_pages",
+  "info": {
+    "singularName": "efd-page",
+    "pluralName": "efd-pages",
+    "displayName": "EFD Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "component": "product-page.hero",
+      "repeatable": false
+    },
+    "featuredClients": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::client.client"
+    }
+  }
+}

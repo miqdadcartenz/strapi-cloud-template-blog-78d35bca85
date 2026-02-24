@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "smartgov_detail_categories",
+  "info": {
+    "singularName": "smartgov-detail-category",
+    "pluralName": "smartgov-detail-categories",
+    "displayName": "Smartgov Detail Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryId": {
+      "type": "string"
+    },
+    "label": {
+      "type": "string"
+    },
+    "megaMenuChildId": {
+      "type": "string"
+    },
+    "sidebarAsFlat": {
+      "type": "boolean"
+    },
+    "order": {
+      "type": "integer"
+    },
+    "subMenus": {
+      "type": "component",
+      "component": "product-page.sub-menu",
+      "repeatable": true
+    }
+  }
+}

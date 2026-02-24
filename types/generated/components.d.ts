@@ -126,6 +126,33 @@ export interface HomeStatItem extends Struct.ComponentSchema {
   };
 }
 
+export interface PalapaKlienPalapaKlienCard extends Struct.ComponentSchema {
+  collectionName: 'components_palapa_klien_palapa_klien_cards';
+  info: {
+    displayName: 'Palapa Klien Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    nama_daerah: Schema.Attribute.String;
+    produk_url: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface PalapaKlienPalapaKlienSection extends Struct.ComponentSchema {
+  collectionName: 'components_palapa_klien_palapa_klien_sections';
+  info: {
+    displayName: 'Palapa Klien Section';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    cards: Schema.Attribute.Component<'palapa-klien.palapa-klien-card', true>;
+    rating: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface ProductPageBlockHeading extends Struct.ComponentSchema {
   collectionName: 'components_product_page_block_headings';
   info: {
@@ -319,6 +346,20 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface StrategicConsultingStrategicProject
+  extends Struct.ComponentSchema {
+  collectionName: 'components_strategic_consulting_strategic_projects';
+  info: {
+    displayName: 'Strategic Project';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+    product_url: Schema.Attribute.String;
+  };
+}
+
 export interface TentangKamiNilaiIntiItem extends Struct.ComponentSchema {
   collectionName: 'components_tentang_kami_nilai_inti_items';
   info: {
@@ -356,6 +397,8 @@ declare module '@strapi/strapi' {
       'home.section-sertifikat': HomeSectionSertifikat;
       'home.section-testimoni': HomeSectionTestimoni;
       'home.stat-item': HomeStatItem;
+      'palapa-klien.palapa-klien-card': PalapaKlienPalapaKlienCard;
+      'palapa-klien.palapa-klien-section': PalapaKlienPalapaKlienSection;
       'product-page.block-heading': ProductPageBlockHeading;
       'product-page.block-list': ProductPageBlockList;
       'product-page.block-paragraph': ProductPageBlockParagraph;
@@ -370,6 +413,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'strategic-consulting.strategic-project': StrategicConsultingStrategicProject;
       'tentang-kami.nilai-inti-item': TentangKamiNilaiIntiItem;
       'tentang-kami.team-member': TentangKamiTeamMember;
     }

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_palapa_klien_palapa_klien_sections",
+  "info": {
+    "displayName": "Palapa Klien Section"
+  },
+  "options": {},
+  "attributes": {
+    "badge": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "rating": {
+      "type": "string"
+    },
+    "cards": {
+      "type": "component",
+      "component": "palapa-klien.palapa-klien-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
