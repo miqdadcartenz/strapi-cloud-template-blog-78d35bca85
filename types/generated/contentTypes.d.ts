@@ -780,6 +780,35 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiMegaMenuMegaMenu extends Struct.SingleTypeSchema {
+  collectionName: 'mega_menus';
+  info: {
+    description: 'Konfigurasi mega menu untuk navbar Produk';
+    displayName: 'Mega Menu';
+    pluralName: 'mega-menus';
+    singularName: 'mega-menu';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    items: Schema.Attribute.Component<'menu.mega-menu-item', true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::mega-menu.mega-menu'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiPalapaDetailCategoryPalapaDetailCategory
   extends Struct.CollectionTypeSchema {
   collectionName: 'palapa_detail_categories';
@@ -910,6 +939,7 @@ export interface ApiProductProduct extends Struct.CollectionTypeSchema {
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
+    urlProduk: Schema.Attribute.String;
   };
 }
 
@@ -1577,6 +1607,7 @@ declare module '@strapi/strapi' {
       'api::gallery.gallery': ApiGalleryGallery;
       'api::global.global': ApiGlobalGlobal;
       'api::homepage.homepage': ApiHomepageHomepage;
+      'api::mega-menu.mega-menu': ApiMegaMenuMegaMenu;
       'api::palapa-detail-category.palapa-detail-category': ApiPalapaDetailCategoryPalapaDetailCategory;
       'api::palapa-page.palapa-page': ApiPalapaPagePalapaPage;
       'api::product-page.product-page': ApiProductPageProductPage;

@@ -1,9 +1,170 @@
 'use strict';
 
 const COS = require('cos-nodejs-sdk-v5');
+const fs = require('fs');
+const os = require('os');
+const path = require('path');
+const fse = require('fs-extra');
 
 const TENCENT_PROVIDER = 'strapi-provider-upload-tencent-cloud-storage';
 const SIGNED_URL_EXPIRES = 3600; // 1 jam
+
+let safeRemovePatched = false;
+let safeFsUnlinkPatched = false;
+
+function sleep(ms) {
+  return new Promise((r) => setTimeout(r, ms));
+}
+
+function isWindowsTmpPath(p) {
+  if (!p) return false;
+  const resolved = path.resolve(String(p));
+  const tmpRoot = path.resolve(os.tmpdir());
+  return resolved.startsWith(tmpRoot);
+}
+
+function isStrapiUploadOptimizedTmpPath(p) {
+  if (!p) return false;
+  const resolved = path.resolve(String(p));
+  return (
+    isWindowsTmpPath(resolved) &&
+    resolved.includes(`${path.sep}strapi-upload-`) &&
+    resolved.includes(`${path.sep}optimized-`)
+  );
+}
+
+/**
+ * Global fs patch for Windows: retry/ignore EBUSY on tmp optimized files.
+ * This catches cleanup errors even when they originate inside fs-extra internals.
+ */
+function patchFsUnlinkForWindowsTemp() {
+  if (safeFsUnlinkPatched) return;
+  safeFsUnlinkPatched = true;
+
+  if (process.platform !== 'win32') return;
+
+  /** @type {any} */
+  const fsAny = fs;
+
+  const retryable = new Set(['EBUSY', 'EPERM', 'ENOTEMPTY']);
+  const maxAttempts = 6;
+  const delays = [50, 100, 200, 400, 800, 1200];
+
+  const originalUnlink = fs.unlink.bind(fs);
+  fsAny.unlink = (p, cb) => {
+    // IMPORTANT: on Windows, the upload stack (formidable/koa-body/sharp) may use random temp
+    // file names directly under os.tmpdir(), not only strapi-upload/optimized-*.
+    if (!isWindowsTmpPath(p)) return originalUnlink(p, cb);
+    let attempt = 0;
+    const tryOnce = () => {
+      originalUnlink(p, async (err) => {
+        if (!err) return cb?.(null);
+        if (err.code === 'ENOENT') return cb?.(null);
+        if (!retryable.has(err.code) || attempt >= maxAttempts) return cb?.(null);
+        const delay = delays[Math.min(attempt, delays.length - 1)];
+        attempt += 1;
+        await sleep(delay);
+        tryOnce();
+      });
+    };
+    tryOnce();
+  };
+
+  if (fs.promises?.unlink) {
+    const originalPromisesUnlink = fs.promises.unlink.bind(fs.promises);
+    fs.promises.unlink = async (p) => {
+      if (!isWindowsTmpPath(p)) return originalPromisesUnlink(p);
+      let attempt = 0;
+      // eslint-disable-next-line no-constant-condition
+      while (true) {
+        try {
+          // eslint-disable-next-line no-await-in-loop
+          return await originalPromisesUnlink(p);
+        } catch (err) {
+          if (err?.code === 'ENOENT') return;
+          if (!retryable.has(err?.code) || attempt >= maxAttempts) return;
+          const delay = delays[Math.min(attempt, delays.length - 1)];
+          attempt += 1;
+          // eslint-disable-next-line no-await-in-loop
+          await sleep(delay);
+        }
+      }
+    };
+  }
+}
+
+/**
+ * Windows sometimes keeps a lock on recently-used temp files (Sharp streams),
+ * causing cleanup to fail with EBUSY/EPERM. This patch makes cleanup resilient
+ * for Strapi upload temp directories only.
+ */
+function patchFsExtraRemoveForWindowsTemp() {
+  if (safeRemovePatched) return;
+  safeRemovePatched = true;
+
+  if (process.platform !== 'win32') return;
+
+  const tmpRoot = path.resolve(os.tmpdir());
+
+  const retryable = new Set(['EBUSY', 'EPERM', 'ENOTEMPTY']);
+  const maxAttempts = 6;
+  // exponential-ish backoff: 50, 100, 200, 400, 800, 1200
+  const delays = [50, 100, 200, 400, 800, 1200];
+
+  const patchRemove = (fseInstance) => {
+    if (!fseInstance || typeof fseInstance.remove !== 'function') return;
+
+    const originalRemove = fseInstance.remove.bind(fseInstance);
+
+    fseInstance.remove = async (targetPath, ...rest) => {
+      const resolved = targetPath ? path.resolve(String(targetPath)) : '';
+      const isStrapiTmp =
+        resolved.startsWith(tmpRoot) && resolved.includes(`${path.sep}strapi-upload-`);
+
+      // Default behavior for non Strapi temp paths
+      if (!isStrapiTmp) {
+        return originalRemove(targetPath, ...rest);
+      }
+
+      let attempt = 0;
+      while (attempt < maxAttempts) {
+        try {
+          // eslint-disable-next-line no-await-in-loop
+          return await originalRemove(targetPath, ...rest);
+        } catch (err) {
+          const code = err && err.code;
+          if (code === 'ENOENT') return; // already deleted
+          if (!retryable.has(code)) throw err;
+          // eslint-disable-next-line no-await-in-loop
+          await sleep(delays[Math.min(attempt, delays.length - 1)]);
+          attempt += 1;
+        }
+      }
+
+      // Give up silently to avoid breaking the upload flow.
+      if (process.env.NODE_ENV === 'development') {
+        // eslint-disable-next-line no-console
+        console.warn('[upload extension] temp cleanup skipped (file lock):', resolved);
+      }
+    };
+  };
+
+  // Patch the fs-extra instance used by this extension (may differ from Strapi plugin's instance)
+  patchRemove(fse);
+
+  // Patch the fs-extra instance resolved from @strapi/upload context (most important)
+  try {
+    const uploadPkgRoot = path.dirname(require.resolve('@strapi/upload/package.json'));
+    const uploadServicesDir = path.join(uploadPkgRoot, 'dist', 'server', 'services');
+    const uploadDir = uploadServicesDir;
+    const fsePath = require.resolve('fs-extra', { paths: [uploadDir] });
+    // eslint-disable-next-line global-require, import/no-dynamic-require
+    const uploadFse = require(fsePath);
+    patchRemove(uploadFse);
+  } catch {
+    // ignore - best effort
+  }
+}
 
 /**
  * Generate COS object Key from Strapi file entity.
@@ -82,6 +243,9 @@ async function ensureSignedUrls(body) {
 }
 
 module.exports = (plugin) => {
+  patchFsExtraRemoveForWindowsTemp();
+  patchFsUnlinkForWindowsTemp();
+
   const originalContentApi = plugin.controllers['content-api'];
   if (typeof originalContentApi !== 'function') return plugin;
 

@@ -1,0 +1,31 @@
+{
+  "collectionName": "components_menu_mega_menu_items",
+  "info": {
+    "displayName": "Mega Menu Item",
+    "icon": "th-large",
+    "description": "Item level 1 di Mega Menu"
+  },
+  "options": {},
+  "attributes": {
+    "itemId": {
+      "type": "string",
+      "required": true,
+      "description": "ID unik level 1 (dipakai di URL). Contoh: smartgov, efd, palapa, strategic-consulting"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "menuType": {
+      "type": "enumeration",
+      "enum": ["nested", "flat", "single"],
+      "default": "nested"
+    },
+    "children": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.child"
+    }
+  }
+}
+

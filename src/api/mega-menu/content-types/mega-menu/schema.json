@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "mega_menus",
+  "info": {
+    "singularName": "mega-menu",
+    "pluralName": "mega-menus",
+    "displayName": "Mega Menu",
+    "description": "Konfigurasi mega menu untuk navbar Produk"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "items": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.mega-menu-item"
+    }
+  }
+}
+

@@ -32,8 +32,11 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::homepage.homepage",
-      "inversedBy": "featuredProducts",
-      "description": "Ditampilkan di beranda jika di-set"
+      "description": "Ditampilkan di beranda jika di-set",
+      "inversedBy": "featuredProducts"
+    },
+    "urlProduk": {
+      "type": "string"
     }
   }
 }

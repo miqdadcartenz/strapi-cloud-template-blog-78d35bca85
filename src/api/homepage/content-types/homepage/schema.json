@@ -56,8 +56,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::product.product",
-      "mappedBy": "homepage",
-      "description": "Produk yang ditampilkan di beranda (optional)"
+      "mappedBy": "homepage"
     },
     "featuredClients": {
       "type": "relation",
@@ -77,8 +76,7 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::article.article",
-      "mappedBy": "homepage",
-      "description": "Artikel yang ditampilkan di beranda (optional)"
+      "mappedBy": "homepage"
     }
   }
 }

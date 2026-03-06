@@ -126,6 +126,51 @@ export interface HomeStatItem extends Struct.ComponentSchema {
   };
 }
 
+export interface MenuChild extends Struct.ComponentSchema {
+  collectionName: 'components_menu_children';
+  info: {
+    description: 'Sub-menu (level 2) untuk Mega Menu';
+    displayName: 'Mega Menu Child';
+    icon: 'layer-group';
+  };
+  attributes: {
+    childId: Schema.Attribute.String & Schema.Attribute.Required;
+    contentSubtitle: Schema.Attribute.String;
+    contentTitle: Schema.Attribute.String;
+    details: Schema.Attribute.Component<'menu.detail', true>;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+  };
+}
+
+export interface MenuDetail extends Struct.ComponentSchema {
+  collectionName: 'components_menu_details';
+  info: {
+    description: 'Detail (judul + daftar item, satu item per baris)';
+    displayName: 'Mega Menu Detail';
+    icon: 'list';
+  };
+  attributes: {
+    itemsText: Schema.Attribute.JSON;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface MenuMegaMenuItem extends Struct.ComponentSchema {
+  collectionName: 'components_menu_mega_menu_items';
+  info: {
+    description: 'Item level 1 di Mega Menu';
+    displayName: 'Mega Menu Item';
+    icon: 'th-large';
+  };
+  attributes: {
+    children: Schema.Attribute.Component<'menu.child', true>;
+    itemId: Schema.Attribute.String & Schema.Attribute.Required;
+    label: Schema.Attribute.String & Schema.Attribute.Required;
+    menuType: Schema.Attribute.Enumeration<['nested', 'flat', 'single']> &
+      Schema.Attribute.DefaultTo<'nested'>;
+  };
+}
+
 export interface PalapaKlienPalapaKlienCard extends Struct.ComponentSchema {
   collectionName: 'components_palapa_klien_palapa_klien_cards';
   info: {
@@ -397,6 +442,9 @@ declare module '@strapi/strapi' {
       'home.section-sertifikat': HomeSectionSertifikat;
       'home.section-testimoni': HomeSectionTestimoni;
       'home.stat-item': HomeStatItem;
+      'menu.child': MenuChild;
+      'menu.detail': MenuDetail;
+      'menu.mega-menu-item': MenuMegaMenuItem;
       'palapa-klien.palapa-klien-card': PalapaKlienPalapaKlienCard;
       'palapa-klien.palapa-klien-section': PalapaKlienPalapaKlienSection;
       'product-page.block-heading': ProductPageBlockHeading;

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_menu_children",
+  "info": {
+    "displayName": "Mega Menu Child",
+    "icon": "layer-group",
+    "description": "Sub-menu (level 2) untuk Mega Menu"
+  },
+  "options": {},
+  "attributes": {
+    "childId": {
+      "type": "string",
+      "required": true,
+      "description": "ID unik (dipakai di URL). Contoh: sistem-kota-kab, efd-pajak-bjtt"
+    },
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "contentTitle": {
+      "type": "string",
+      "description": "Judul konten (mis. SMARTGOV). Boleh kosong untuk menu flat."
+    },
+    "contentSubtitle": {
+      "type": "string",
+      "description": "Subjudul konten. Boleh kosong."
+    },
+    "details": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.detail"
+    }
+  }
+}
+

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_menu_details",
+  "info": {
+    "displayName": "Mega Menu Detail",
+    "icon": "list",
+    "description": "Detail (judul + daftar item, satu item per baris)"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "itemsText": {
+      "type": "json"
+    }
+  }
+}

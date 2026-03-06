@@ -9,6 +9,8 @@
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "fix:tab-json": "node ./scripts/fix-tab-content-json.js",
+    "fix:link-columns": "node ./scripts/fix-link-columns-migration.js",
+    "add-mega-menu-permissions": "node ./scripts/add-mega-menu-permissions.js",
     "add-product-permissions": "node ./scripts/add-product-permissions.js",
     "start": "strapi start",
     "strapi": "strapi"
