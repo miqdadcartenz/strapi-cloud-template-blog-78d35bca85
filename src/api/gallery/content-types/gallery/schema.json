@@ -16,7 +16,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "caption": {
       "type": "string"
@@ -32,8 +34,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::homepage.homepage",
-      "inversedBy": "featuredGallery",
-      "description": "Ditampilkan di beranda jika di-set"
+      "inversedBy": "featuredGallery"
     }
   }
 }

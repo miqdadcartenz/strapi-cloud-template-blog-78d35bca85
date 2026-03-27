@@ -14,43 +14,53 @@
   "attributes": {
     "heroSlides": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.hero-slide"
+      "component": "home.hero-slide",
+      "repeatable": true
     },
     "about": {
       "type": "component",
-      "repeatable": false,
-      "component": "home.about-section"
+      "component": "home.about-section",
+      "repeatable": false
     },
     "aboutStats": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.stat-item"
+      "component": "home.stat-item",
+      "repeatable": true
     },
     "produkSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "home.section-produk"
+      "component": "home.section-produk",
+      "repeatable": false
     },
     "klienSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "home.section-klien"
+      "component": "home.section-klien",
+      "repeatable": false
     },
     "klienStats": {
       "type": "component",
-      "repeatable": true,
-      "component": "home.stat-item"
+      "component": "home.stat-item",
+      "repeatable": true
+    },
+    "testimoniSection": {
+      "type": "component",
+      "component": "home.section-testimoni",
+      "repeatable": true
     },
     "galeriSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "home.section-galeri"
+      "component": "home.section-galeri",
+      "repeatable": false
     },
     "artikelSection": {
       "type": "component",
-      "repeatable": false,
-      "component": "home.section-artikel"
+      "component": "home.section-artikel",
+      "repeatable": false
+    },
+    "sertifikatSection": {
+      "type": "component",
+      "component": "home.section-sertifikat",
+      "repeatable": false
     },
     "featuredProducts": {
       "type": "relation",
@@ -62,15 +72,15 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::client.client",
-      "mappedBy": "homepage",
-      "description": "Klien yang ditampilkan di beranda (optional)"
+      "description": "Klien yang ditampilkan di beranda (optional)",
+      "mappedBy": "homepage"
     },
     "featuredGallery": {
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::gallery.gallery",
-      "mappedBy": "homepage",
-      "description": "Galeri yang ditampilkan di beranda (optional)"
+      "description": "Galeri yang ditampilkan di beranda (optional)",
+      "mappedBy": "homepage"
     },
     "featuredArticles": {
       "type": "relation",

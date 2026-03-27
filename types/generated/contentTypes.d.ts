@@ -774,6 +774,14 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       Schema.Attribute.Private;
     produkSection: Schema.Attribute.Component<'home.section-produk', false>;
     publishedAt: Schema.Attribute.DateTime;
+    sertifikatSection: Schema.Attribute.Component<
+      'home.section-sertifikat',
+      false
+    >;
+    testimoniSection: Schema.Attribute.Component<
+      'home.section-testimoni',
+      true
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

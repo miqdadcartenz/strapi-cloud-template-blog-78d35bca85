@@ -22,7 +22,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "order": {
       "type": "integer",
@@ -32,7 +34,6 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::homepage.homepage",
-      "description": "Ditampilkan di beranda jika di-set",
       "inversedBy": "featuredProducts"
     },
     "urlProduk": {

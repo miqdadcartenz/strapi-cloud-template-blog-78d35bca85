@@ -19,7 +19,9 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images"]
+      "allowedTypes": [
+        "images"
+      ]
     },
     "order": {
       "type": "integer",
@@ -29,8 +31,7 @@
       "type": "relation",
       "relation": "manyToOne",
       "target": "api::homepage.homepage",
-      "inversedBy": "featuredClients",
-      "description": "Ditampilkan di beranda jika di-set"
+      "inversedBy": "featuredClients"
     }
   }
 }
