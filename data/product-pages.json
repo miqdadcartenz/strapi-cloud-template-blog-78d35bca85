@@ -4,7 +4,9 @@
     "hero": {
       "title": "Solusi Pengelolaan Pajak Daerah Kota/Kabupaten",
       "paragraphs": [
-        { "text": "SmartGov merupakan satu portal aplikasi yang terdiri berbagai jenis pajak seperti PBB-P2, BPHTB, Pajak Hotel, Pajak Restoran, Pajak Parkir, Pajak Hiburan, Pajak Mineral, Pajak Walet, Pajak Air Tanah, Pajak Reklame, HKPD, PBJT, serta Retribusi menjadi satu kesatuan." }
+        {
+          "text": "SmartGov merupakan satu portal aplikasi yang terdiri berbagai jenis pajak seperti PBB-P2, BPHTB, Pajak Hotel, Pajak Restoran, Pajak Parkir, Pajak Hiburan, Pajak Mineral, Pajak Walet, Pajak Air Tanah, Pajak Reklame, HKPD, PBJT, serta Retribusi menjadi satu kesatuan."
+        }
       ],
       "demoUrl": "https://smartgov.cartenz.com"
     },
@@ -37,7 +39,9 @@
     "hero": {
       "title": "Solusi Monitoring Pajak Daerah",
       "paragraphs": [
-        { "text": "EFD (Electronic Fiscal Device) adalah sistem yang digunakan oleh pemerintah daerah untuk memantau pendapatan para wajib pajak. Tujuan utama dari penggunaan EFD adalah memastikan bahwa setiap transaksi terekam secara akurat." }
+        {
+          "text": "EFD (Electronic Fiscal Device) adalah sistem yang digunakan oleh pemerintah daerah untuk memantau pendapatan para wajib pajak. Tujuan utama dari penggunaan EFD adalah memastikan bahwa setiap transaksi terekam secara akurat."
+        }
       ],
       "demoUrl": "https://smartgov.cartenz.com"
     },
@@ -67,9 +71,11 @@
   {
     "slug": "palapa",
     "hero": {
-      "title": "Digitalisasi Layanan Pemerintah Terintegrasi",
+      "title": "Sistem enabler kebijakan pemerintah",
       "paragraphs": [
-        { "text": "Palapa bertujuan untuk membuat proses layanan instansi pemerintah menjadi lebih efektif, efisien, praktis serta mendekatkan layanan pemerintah ke masyarakat dalam satu sistem." }
+        {
+          "text": "Palapa bertujuan untuk membuat proses layanan instansi pemerintah menjadi lebih efektif, efisien, praktis serta mendekatkan layanan pemerintah ke masyarakat dalam satu sistem."
+        }
       ],
       "demoUrl": "https://smartgov.cartenz.com"
     },
@@ -101,7 +107,9 @@
     "hero": {
       "title": "Layanan Konsultasi dan Project",
       "paragraphs": [
-        { "text": "Cartenz mulai secara aktif mengikuti kegiatan project sebagai salah satu layanan utama pada tahun 2022. Project Consultant bertujuan untuk memberikan layanan konsultasi dan rekomendasi, khususnya di bidang teknologi informasi, kepada seluruh tingkat instansi pemerintahan." }
+        {
+          "text": "Cartenz mulai secara aktif mengikuti kegiatan project sebagai salah satu layanan utama pada tahun 2022. Project Consultant bertujuan untuk memberikan layanan konsultasi dan rekomendasi, khususnya di bidang teknologi informasi, kepada seluruh tingkat instansi pemerintahan."
+        }
       ],
       "demoUrl": "https://smartgov.cartenz.com"
     },
