@@ -1,0 +1,1029 @@
+[
+  {
+    "categoryId": "sistem-pengelolaan-pajak-daerah",
+    "label": "Sistem pengelolaan pajak daerah",
+    "megaMenuChildId": "sistem-pengelolaan-pajak-daerah",
+    "sidebarAsFlat": false,
+    "order": 1,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pajak-bumi-dan-bangunan",
+        "title": "Sistem Pajak Bumi dan Bangunan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam menerapkan Peraturan Daerah terkait pengelolaan Pajak Bumi dan Bangunan (PBB). Sistem ini memudahkan wajib pajak dalam melakukan pembayaran tagihan secara lebih mudah, cepat, dan transparan. Selain itu, sistem ini juga mendukung pengelolaan data dan penetapan pajak yang lebih akurat serta telah mengacu pada Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Fleksibelitas: Sistem memungkinkan Pemerintah Daerah untuk menyesuaikan dan mengakomodasi berbagai peraturan daerah yang berlaku dalam pengelolaan Pajak Bumi dan Bangunan.",
+                    "Data Aktual dan Terintegrasi: Data yang tersimpan dalam sistem diproses melalui mekanisme integrasi yang cepat sehingga menghasilkan informasi yang selalu terbarui dan dapat diakses secara realtime",
+                    "Laporan yang Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-bea-perolehan-hak-atas-tanah-dan-bangunan",
+        "title": "Sistem Bea Perolehan Hak atas Tanah dan Bangunan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk menjembatani komunikasi dan pertukaran data antara Wajib Pajak yang dibantu oleh Pejabat Pembuat Akta Tanah (PPAT)/Notaris, Bank, serta Pemerintah Daerah melalui satu sistem digital. Sistem ini dilengkapi dengan berbagai fitur yang mendukung proses pelayanan yang cepat, transparan, dan akuntabel, serta dapat disesuaikan dengan peraturan daerah yang berlaku. Selain itu, sistem ini juga telah mendukung implementasi Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah sesuai dengan Undang-Undang HKPD.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Konfigurasi yang Fleksibel: Sistem dapat dikonfigurasi sesuai dengan alur kerja Pemerintah Daerah, termasuk penggunaan referensi dan ketentuan yang telah ditetapkan oleh daerah masing-masing.",
+                    "Integrasi Data: Sistem telah mendukung integrasi data dengan pihak-pihak yang menjadi mitra utama dalam proses layanan, seperti Badan Pertanahan Nasional (BPN), perbankan, serta instansi terkait lainnya.",
+                    "Fitur Lengkap: Sistem menyediakan berbagai fitur yang mendukung proses validasi, verifikasi, serta konfirmasi data yang dibutuhkan oleh Pemerintah Daerah dalam pengelolaan BPHTB.",
+                    "Laporan Akuntabel: Sistem menghasilkan laporan yang terstruktur dan akurat sehingga dapat digunakan oleh Pemerintah Daerah dalam proses pelaporan kepada instansi terkait, termasuk Badan Pemeriksa Keuangan (BPK)."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pajak-barang-dan-jasa-tertentu-hotel-restoran-parkir-hiburan-penerangan-jalan",
+        "title": "Sistem Pajak Barang dan Jasa Tertentu (Hotel, Restoran, Parkir, Hiburan, Penerangan Jalan)",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk mendukung pengelolaan Pajak Barang dan Jasa Tertentu (PBJT) antara Pemerintah Daerah dan Wajib Pajak, mulai dari proses pelaporan pajak, penetapan, pelayanan, hingga penyajian laporannya. Sistem ini membantu Pemerintah Daerah dalam melakukan pengawasan dan pengelolaan penerimaan pajak secara lebih efektif, transparan, dan akuntabel. Selain itu, sistem ini juga telah mendukung implementasi Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah sesuai dengan Undang-Undang HKPD.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pelayanan Cepat: Sistem mendukung proses pelayanan yang cepat, mulai dari pembuatan tagihan hingga proses pembayaran pajak yang dapat dilakukan secara efisien dalam waktu yang singkat.",
+                    "Integrasi Mudah: Sistem dapat dengan mudah diintegrasikan dengan berbagai sistem pendukung lainnya seperti Tapping Box, sistem pembayaran, serta integrasi data dengan sistem terkait lainnya.",
+                    "Monitoring Efektif: Pemerintah Daerah dapat melakukan monitoring secara menyeluruh terhadap proses pengelolaan pajak, mulai dari pengelolaan referensi data, pelaporan pajak oleh wajib pajak, proses penetapan, penagihan, hingga pembayaran pajak.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pajak-mineral-bukan-logam-dan-batuan",
+        "title": "Sistem Pajak Mineral Bukan Logam dan Batuan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk mempermudah wajib pajak dalam melaporkan kegiatan usaha terkait Pajak Mineral Bukan Logam dan Batuan secara tertib dan terstruktur. Melalui sistem ini, Pemerintah Daerah dapat melakukan monitoring secara lebih efektif terhadap aktivitas perpajakan yang dilakukan oleh wajib pajak. Proses pengelolaan data dapat dikategorikan mulai dari hulu hingga hilir kegiatan sehingga memudahkan Peraturan Daerah dalam pengelolaan pajak tersebut. Selain itu, sistem ini juga telah mendukung implementasi Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah sesuai dengan Undang-Undang HKPD.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Referensi Fleksibel: Sistem menyediakan pengaturan referensi perpajakan mineral yang dapat dikonfigurasi oleh Pemerintah Daerah sesuai dengan ketentuan dan kebutuhan yang berlaku.",
+                    "Integrasi Mudah: Sistem mendukung integrasi dengan layanan perbankan sehingga proses pembayaran pajak dapat dilakukan dengan lebih cepat, mudah, dan efisien.",
+                    "Sesuai Peraturan Daerah: Sistem dirancang untuk mendukung implementasi berbagai ketentuan dalam Peraturan Daerah, sehingga alur proses bisnis perpajakan dapat berjalan sesuai dengan regulasi yang berlaku.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pajak-sarang-burung-walet",
+        "title": "Sistem Pajak Sarang Burung Walet",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk mempermudah wajib pajak dalam melaporkan kegiatan usaha terkait pengelolaan sarang burung walet secara tertib dan terstruktur. Melalui sistem ini, Pemerintah Daerah dapat melakukan monitoring terhadap proses pelaporan hingga pembayaran pajak oleh wajib pajak secara lebih efektif dan transparan. Sistem ini juga mendukung implementasi pengelolaan pajak sesuai dengan ketentuan yang diatur dalam Peraturan Daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Integrasi Mudah: Sistem mendukung integrasi dengan layanan perbankan sehingga proses pembayaran pajak dapat dilakukan dengan lebih cepat, mudah, dan efisien.",
+                    "Sesuai Peraturan Daerah: Sistem dirancang untuk mendukung implementasi berbagai ketentuan dalam Peraturan Daerah, sehingga alur proses bisnis perpajakan dapat berjalan sesuai dengan regulasi yang berlaku.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pajak-air-tanah",
+        "title": "Sistem Pajak Air Tanah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam mengawasi dan mengelola Wajib Pajak yang memanfaatkan sumber air tanah untuk kegiatan komersial agar dapat memenuhi kewajiban perpajakannya secara tertib. Melalui sistem ini, Pemerintah Daerah dapat menetapkan besaran tagihan pajak berdasarkan formula perhitungan yang mengacu pada ketentuan dalam Peraturan Daerah yang berlaku. Selain itu, sistem ini juga telah mendukung implementasi pengelolaan pajak sesuai dengan Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Formula Perhitungan sesuai Peraturan Daerah: Sistem dapat mengakomodasi berbagai formula perhitungan pajak yang ditetapkan dalam Peraturan Daerah, berdasarkan referensi seperti jenis air, kualitas air, sumber air, serta parameter lainnya yang ditentukan oleh Pemerintah Daerah.",
+                    "Integrasi Mudah: Sistem mendukung integrasi dengan berbagai platform, seperti aplikasi masyarakat mobile dalam proses pengumpulan informasi sebelum penetapan tagihan. Selain itu, sistem juga dapat diintegrasikan dengan perangkat smart water meter untuk pencatatan penggunaan air serta dengan sistem perbankan untuk proses pembayaran pajak.",
+                    "Kebijakan Stimulus yang Efektif: Sistem memungkinkan Pemerintah Daerah untuk menerapkan kebijakan atau stimulus perpajakan secara tepat sasaran sesuai dengan kebutuhan dan kebijakan daerah.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pajak-reklame",
+        "title": "Sistem Pajak Reklame",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk mempermudah Wajib Pajak dalam melaporkan penyelenggaraan reklame sesuai dengan ketentuan dan peruntukannya. Melalui sistem ini, Pemerintah Daerah dapat melakukan proses penetapan tagihan pajak berdasarkan formula perhitungan yang mengacu pada Peraturan Daerah yang berlaku. Sistem ini membantu pengelolaan Pajak Reklame secara lebih tertib, transparan, dan terintegrasi.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Formula Perhitungan sesuai Peraturan Daerah: Sistem mengakomodasi berbagai referensi dan ketentuan yang dibutuhkan untuk memformulasikan perhitungan penetapan pajak bagi setiap jenis reklame yang diselenggarakan oleh wajib pajak.",
+                    "Integrasi Mudah: Sistem dapat dengan mudah diintegrasikan dengan sistem perizinan DPMPTSP sehingga kesesuaian data dapat terjaga. Selain itu, sistem juga mendukung integrasi dengan layanan perbankan untuk mempermudah proses pembayaran pajak.",
+                    "Monitoring Efektif: Sistem dilengkapi dengan aplikasi mobile yang dapat digunakan untuk memonitor keberadaan dan detail setiap objek reklame di lapangan melalui pemindaian QR Code.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penerimaan-opsen-pkb",
+        "title": "Sistem Penerimaan Opsen PKB",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang khusus untuk membantu Pemerintah Kabupaten/Kota dalam penerimaan pembayaran dan melakukan rekonsiliasi Opsen Pajak Kendaraan Bermotor (PKB) yang disalurkan oleh Pemerintah Provinsi secara berkala dan berkelanjutan. Sejalan dengan implementasi desentralisasi fiskal sebagaimana diatur dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerimaan PKB: Sistem dapat menerima data pembayaran Pajak Kendaraan Bermotor secara langsung berdasarkan hasil rekonsiliasi yang disampaikan oleh Pemerintah Provinsi.",
+                    "Dashboard Integrasi: Sistem menyediakan dashboard yang menampilkan berbagai informasi penerimaan berdasarkan data yang terintegrasi dari Pemerintah Provinsi sehingga memudahkan proses monitoring oleh Pemerintah Daerah.",
+                    "Laporan yang Efektif: Sistem menyediakan laporan yang informatif dan terstruktur berdasarkan data penerimaan yang diperoleh, sehingga memudahkan Pemerintah Daerah dalam melakukan analisis dan pelaporan."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penerimaan-opsen-bbnkb",
+        "title": "Sistem Penerimaan Opsen BBNKB",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang khusus untuk membantu Pemerintah Kabupaten/Kota dalam menerima dan mengelola pendapatan dari Opsen Bea Balik Nama Kendaraan Bermotor (BBNKB), yang berasal dari transaksi pendaftaran kendaraan baru maupun peralihan hak kepemilikan kendaraan bermotor. Penerimaan tersebut disalurkan oleh Pemerintah Provinsi sesuai dengan ketentuan dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerimaan BBNKB: Sistem dapat menerima data pembayaran Bea Balik Nama Kendaraan Bermotor (BBNKB) secara langsung berdasarkan hasil rekonsiliasi yang disampaikan oleh Pemerintah Provinsi.",
+                    "Dashboard Integrasi: Sistem menyediakan dashboard yang menampilkan berbagai informasi penerimaan berdasarkan data yang terintegrasi dari Pemerintah Provinsi, sehingga memudahkan proses monitoring oleh Pemerintah Daerah.",
+                    "Laporan yang Efektif: Sistem menyediakan laporan yang informatif dan terstruktur berdasarkan data penerimaan yang diperoleh, sehingga memudahkan Pemerintah Daerah dalam melakukan analisis dan pelaporan."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-opsen-mineral-bukan-logam-dan-batuan",
+        "title": "Sistem Opsen Mineral Bukan Logam dan Batuan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah Kabupaten/Kota dalam mengelola pajak Mineral Bukan Logam dan Batuan secara lebih terstruktur dan terintegrasi. Selain itu, sistem ini juga mendukung pengelolaan dan penyaluran Opsen Mineral Bukan Logam dan Batuan kepada Pemerintah Provinsi sesuai dengan ketentuan yang diatur dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Referensi yang Lengkap: Sistem menyediakan berbagai referensi yang dibutuhkan dalam pengelolaan pajak mineral, sehingga Pemerintah Daerah dapat menyesuaikan pengaturan sesuai dengan ketentuan dan kebutuhan yang berlaku.",
+                    "Integrasi Mudah: Sistem mendukung integrasi dengan berbagai sistem terkait, baik untuk pertukaran data antarinstansi maupun untuk mendukung proses pembayaran pajak secara lebih cepat dan efisien.",
+                    "Dashboard yang Efektif: Sistem menyediakan dashboard yang informatif untuk memantau data secara menyeluruh oleh Pemerintah Daerah.",
+                    "Laporan Akuntabel: Sistem menyediakan berbagai laporan yang detail dan sistematis sehingga dapat digunakan oleh bagian keuangan dalam menyajikan data penerimaan pajak secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "dashboard-pengelolaan-penerimaan-pajak-daerah",
+        "title": "Dashboard pengelolaan penerimaan Pajak Daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah, khususnya pimpinan daerah, dalam memantau dan menganalisis penerimaan pajak daerah secara menyeluruh. Sistem ini menyajikan informasi secara real-time, komprehensif, dan mudah dipahami sehingga dapat mendukung proses pengambilan keputusan yang lebih cepat dan tepat. Selain itu, sistem juga dapat menampilkan berbagai data hasil integrasi dari sistem lainnya.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Visualisasi Efektif: Sistem menyajikan data dalam bentuk visualisasi yang informatif seperti grafik, diagram, dan indikator sehingga memudahkan pimpinan daerah dalam memahami kondisi penerimaan pajak secara cepat dan jelas.",
+                    "Dashboard Mobile: Sistem memberikan kemudahan untuk pemimpin Pemerintah Daerah dalam meninjau kinerja pendapatan pajak secara real-time, akurat dan cepat.",
+                    "Data Aktual: Informasi yang ditampilkan pada dashboard diperbarui secara berkala dan terintegrasi dengan sistem perpajakan daerah sehingga data yang disajikan selalu aktual dan relevan.",
+                    "Sesuai Kebutuhan: Dashboard dapat disesuaikan dengan kebutuhan Pemerintah Daerah, baik dari sisi indikator, jenis laporan, maupun tampilan informasi yang dibutuhkan oleh pimpinan daerah."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penerimaan-dana-bagi-hasil",
+        "title": "Sistem Penerimaan Dana Bagi Hasil",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam mengelola penerimaan Dana Bagi Hasil yang ditransfer dari Pemerintah Pusat. Sistem ini memastikan bahwa setiap data penerimaan yang disampaikan oleh Pemerintah Pusat dapat tercatat dengan baik, terstruktur, dan terdokumentasi secara berkelanjutan. Dengan demikian, Pemerintah Daerah dapat melakukan monitoring data penerimaan secara lebih efektif.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerimaan Dana Bagi Hasil: Sistem dapat menerima dan mencatat data Dana Bagi Hasil yang telah ditransfer dari Pemerintah Pusat sehingga seluruh informasi penerimaan dapat terdokumentasi dengan baik.",
+                    "Dashboard Integrasi: Sistem menyediakan dashboard yang menampilkan berbagai informasi penerimaan berdasarkan data yang telah diinput dan direkonsiliasi dari Pemerintah Pusat, sehingga memudahkan proses monitoring oleh Pemerintah Daerah.",
+                    "Laporan yang Efektif: Sistem menyediakan laporan yang informatif dan terstruktur berdasarkan data penerimaan yang diperoleh."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penerimaan-retribusi",
+        "title": "Sistem Penerimaan Retribusi",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam mengelola penerimaan retribusi yang dilaporkan oleh masing-masing Organisasi Perangkat Daerah (OPD). Sistem ini memastikan bahwa seluruh data penerimaan retribusi dapat tercatat dengan baik, tersimpan secara aman, serta tersusun secara rapi dalam laporan yang terstruktur sehingga memudahkan proses monitoring Pemerintah Daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerimaan Retribusi: Sistem dapat menerima dan mencatat data penerimaan retribusi yang dilaporkan oleh masing-masing OPD di daerah tersebut sehingga seluruh data penerimaan dapat terdokumentasi dengan baik.",
+                    "Dashboard Integrasi: Sistem menyediakan dashboard yang menampilkan berbagai informasi penerimaan berdasarkan data yang telah diinput oleh OPD, sehingga memudahkan pimpinan daerah dalam melakukan monitoring.",
+                    "Laporan yang Efektif: Sistem menyediakan laporan yang informatif dan terstruktur berdasarkan data penerimaan yang diperoleh."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pencatatan-keuangan",
+        "title": "Sistem Pencatatan Keuangan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk memudahkan bagian keuangan atau bendahara Pemerintah Daerah dalam mengambil data-data rekapitulasi sistem yang dapat dibandingkan dengan rekonsiliasi pada pihak-pihak terkait. Laporan terstruktur sehingga pembacaan data-data jadi lebih cepat dan terpecaya.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerimaan semua pajak: sistem langsung mendapatkan data-data perpajakan yang terdapat di satu sistem sehingga mendapatkan data-data yang aktual dan terpecaya",
+                    "Laporan yang Efektif: Sistem menyediakan laporan yang informatif dan terstruktur berdasarkan data penerimaan yang diperoleh."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pengelolaan-peta-objek-pajak-taxation-dan-tax-survey-map",
+        "title": "Sistem pengelolaan peta objek pajak (taxation dan tax survey map)",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memvisualisasikan, memvalidasi, dan mengelola data objek pajak secara lebih presisi melalui satu dashboard berbasis peta. Sistem ini mendukung proses pemetaan objek pajak sehingga memudahkan Pemerintah Daerah dalam melakukan pendataan, verifikasi, serta pengawasan terhadap pajak di wilayahnya. Selain itu, sistem ini juga mendukung implementasi pengelolaan pajak daerah sesuai dengan ketentuan dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Sistem Kesatuan: Sistem mengintegrasikan data objek pajak dengan peta wilayah sehingga memudahkan Pemerintah Daerah dalam melakukan identifikasi, validasi, dan pemantauan lokasi objek pajak secara lebih akurat.",
+                    "Sistem Fleksibel: Sistem dapat disesuaikan dengan kebutuhan Pemerintah Daerah, baik dalam pengelolaan data spasial, referensi wilayah, maupun integrasi dengan sistem perpajakan daerah lainnya.",
+                    "Pendataan Mobile: Sistem mengubah pencatatan manual dari kertas ke digital sesuai GPS, memastikan data yang ditarik dari lapangan langsung masuk ke database utama secara akurat, cepat, dan terukur.",
+                    "Sesuai dengan Pemerintah Daerah: Sistem dirancang untuk mendukung pengelolaan potensi pajak daerah secara lebih efektif melalui pemetaan objek pajak yang akurat dan terstruktur, sehingga dapat membantu Pemerintah Daerah dalam pengambilan keputusan berbasis data."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-informasi-perpajakan-dan-tarif-sippt",
+        "title": "Sistem Informasi Perpajakan dan Tarif (SIPPT)",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam melakukan penilaian terhadap objek bangunan PBB secara individual berdasarkan formulasi yang mengacu pada Peraturan Daerah yang berlaku. Sistem ini dapat diintegrasikan dengan sistem perpajakan daerah lainnya maupun digunakan secara mandiri sesuai dengan kebutuhan Pemerintah Daerah. Selain itu, sistem ini juga memberikan rekomendasi penilaian yang dapat digunakan sebagai dasar pertimbangan dalam penetapan PBB.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Referensi Lengkap: Sistem menyediakan berbagai referensi yang dibutuhkan dalam proses penilaian objek pajak, sehingga memudahkan Pemerintah Daerah dalam melakukan pengolahan data.",
+                    "Formula perhitungan Pemerintah Daerah: Sistem mendukung penerapan formula perhitungan yang dapat disesuaikan dengan ketentuan dan parameter yang ditetapkan dalam Peraturan Daerah.",
+                    "Laporan Terstruktur: Sistem menyediakan laporan yang tersusun secara sistematis dan informatif sehingga memudahkan Pemerintah Daerah dalam melakukan evaluasi, analisis, serta pengambilan keputusan terkait penilaian bangunan objek pajak PBB."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-audit-mobile",
+        "title": "Sistem Audit Mobile",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam melakukan audit internal terhadap hasil pendataan objek Pajak Bumi dan Bangunan (PBB) yang telah dilakukan oleh pihak vendor. Melalui sistem ini, Pemerintah Daerah dapat melakukan verifikasi dan pengecekan langsung di lapangan untuk memastikan bahwa data yang diperoleh telah sesuai dengan kondisi sebenarnya serta sesuai dengan kebutuhan dan kegiatan yang dilakukan oleh Pemerintah Daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Akses yang Mudah dan Cepat: Sistem berbasis mobile sehingga memudahkan petugas dalam mengakses data objek pajak dan melakukan proses audit secara langsung di lapangan dengan lebih cepat dan efisien.",
+                    "Laporan Terstruktur: Sistem menyediakan laporan hasil audit yang tersusun secara sistematis sehingga memudahkan Pemerintah Daerah dalam melakukan evaluasi, validasi data, serta pengambilan keputusan terkait pengelolaan objek pajak."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penagihan-offline-mobile",
+        "title": "Sistem Penagihan Offline Mobile",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memberikan pelayanan pembayaran pajak yang lebih optimal kepada wajib pajak. Sistem ini dapat digunakan pada wilayah-wilayah yang memiliki keterbatasan atau koneksi internet yang kurang stabil, sehingga proses penagihan dan pembayaran pajak tetap dapat dilakukan secara efektif. Selain itu, sistem ini juga didukung dengan printer Bluetooth yang memudahkan petugas dalam mencetak bukti pembayaran atau struk secara langsung di lapangan.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Akses yang Mudah dan Cepat: Sistem berbasis mobile sehingga memudahkan petugas dalam melakukan proses penagihan dan pencatatan pembayaran pajak secara langsung di lapangan dengan cepat dan efisien.",
+                    "Termonitoring satu sistem: Data hasil penagihan dan pembayaran yang dilakukan secara offline akan tersinkronisasi ke dalam sistem utama sehingga seluruh aktivitas tetap dapat dimonitor oleh Pemerintah Daerah.",
+                    "Sesuai dengan Pemerintah Daerah: Sistem dirancang untuk mendukung proses penagihan pajak daerah secara fleksibel dan dapat disesuaikan dengan kebijakan serta kebutuhan operasional Pemerintah Daerah."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-pengelolaan-retribusi-daerah",
+    "label": "Sistem Pengelolaan Retribusi Daerah",
+    "megaMenuChildId": "sistem-pengelolaan-retribusi-daerah",
+    "sidebarAsFlat": false,
+    "order": 2,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pengelolaan-retribusi-pelayanan-kebersihan",
+        "title": "Sistem pengelolaan retribusi pelayanan kebersihan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Organisasi Perangkat Daerah (OPD) Pemerintah Daerah dalam memberikan pelayanan kepada masyarakat atau wajib retribusi yang membutuhkan layanan kebersihan, baik perorangan maupun badan usaha. Sistem ini mendukung proses pengelolaan retribusi mulai dari pendaftaran layanan, pengelolaan data wajib retribusi, penetapan tagihan, hingga proses pembayaran retribusi. Selain itu, sistem ini juga telah mendukung implementasi pengelolaan retribusi daerah sesuai dengan ketentuan dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Terintegrasi: Sistem terintegrasi dengan berbagai data dan layanan terkait sehingga memudahkan OPD dalam mengelola proses pelayanan kebersihan dan pencatatan retribusi secara lebih efektif.",
+                    "Akses yang Mudah dan Cepat: Sistem dirancang dengan antarmuka yang mudah digunakan sehingga memudahkan petugas maupun masyarakat dalam melakukan proses pendaftaran layanan dan pembayaran retribusi.",
+                    "Fitur Lengkap: Sistem menyediakan berbagai fitur yang mendukung pengelolaan retribusi pelayanan kebersihan mulai dari pengelolaan data, penetapan tagihan, hingga monitoring pembayaran.",
+                    "Panduan Terstruktur: Sistem menyediakan alur proses yang terstruktur sehingga memudahkan petugas dalam menjalankan setiap tahapan pelayanan dan pengelolaan retribusi.",
+                    "Laporan Akuntabel: Sistem menyediakan laporan yang detail dan sistematis sehingga dapat digunakan oleh Pemerintah Daerah dalam menyajikan data penerimaan retribusi secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pengelolaan-retribusi-pelayanan-pasar",
+        "title": "Sistem pengelolaan retribusi pelayanan pasar",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah, khususnya Organisasi Perangkat Daerah (OPD) yang mengelola pasar, dalam mengelola retribusi pelayanan pasar secara terstruktur dan terintegrasi. Sistem ini mendukung proses pengelolaan mulai dari pendaftaran wajib retribusi beserta data kios, los, dan fasilitas pasar lainnya, hingga proses penetapan tagihan dan pembayaran retribusi secara non-tunai. Sistem ini juga telah mendukung implementasi pengelolaan retribusi daerah sesuai dengan ketentuan dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Terintegrasi: Sistem terintegrasi dengan berbagai data dan layanan terkait sehingga memudahkan OPD dalam mengelola data pedagang, kios, los, serta proses pencatatan dan pengelolaan retribusi pasar secara lebih efektif.",
+                    "Akses yang Mudah dan Cepat: Sistem dirancang dengan antarmuka yang mudah digunakan sehingga memudahkan petugas pasar maupun wajib retribusi dalam melakukan pendaftaran layanan serta pembayaran retribusi.",
+                    "Fitur Lengkap: Sistem menyediakan berbagai fitur yang mendukung pengelolaan retribusi pasar mulai dari pengelolaan data pedagang dan pasar, penetapan tagihan, hingga monitoring pembayaran retribusi",
+                    "Panduan Terstruktur: Sistem menyediakan alur proses yang terstruktur sehingga memudahkan petugas dalam menjalankan setiap tahapan pengelolaan retribusi pelayanan pasar.",
+                    "Laporan Akuntabel: Sistem menyediakan laporan yang detail dan sistematis sehingga dapat digunakan oleh Pemerintah Daerah dalam menyajikan data penerimaan retribusi secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pengelolaan-retribusi-pemakaian-kekayaan-daerah",
+        "title": "Sistem pengelolaan retribusi pemakaian kekayaan daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam mengelola pemanfaatan aset atau kekayaan daerah yang digunakan oleh masyarakat maupun badan usaha. Sistem ini mendukung proses pelayanan kepada wajib retribusi mulai dari pendaftaran penggunaan aset daerah, penetapan retribusi, hingga proses pembayaran secara terstruktur dan transparan. Dengan sistem ini, pengelolaan pemakaian kekayaan daerah dapat dilakukan secara lebih tertib, efektif, dan sesuai dengan ketentuan dalam Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Terintegrasi: Sistem terintegrasi dengan berbagai data dan layanan terkait sehingga memudahkan OPD dalam mengelola data pemanfaatan aset daerah serta pencatatan penerimaan retribusi secara lebih efektif.",
+                    "Akses yang Mudah dan Cepat: Sistem dirancang dengan antarmuka yang mudah digunakan sehingga memudahkan petugas maupun masyarakat dalam melakukan proses pendaftaran penggunaan aset daerah dan pembayaran retribusi.",
+                    "Fitur Lengkap: Sistem menyediakan berbagai fitur yang mendukung pengelolaan retribusi pemakaian kekayaan daerah mulai dari pengelolaan data aset, penetapan tarif retribusi, hingga monitoring pembayaran.",
+                    "Panduan Terstruktur: Sistem menyediakan alur proses yang terstruktur sehingga memudahkan petugas dalam menjalankan setiap tahapan pelayanan dan pengelolaan retribusi.",
+                    "Laporan Akuntabel: Sistem menyediakan laporan yang detail dan sistematis sehingga dapat digunakan oleh Pemerintah Daerah dalam menyajikan data penerimaan retribusi secara akurat, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-penerimaan-pembayaran-billing-center",
+        "title": "Sistem penerimaan pembayaran Billing Center",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang sebagai gerbang pembayaran (payment gateway internal) yang mengonsolidasikan berbagai tagihan dari Organisasi Perangkat Daerah (OPD) pemungut. Sistem ini memastikan setiap transaksi pembayaran dari masyarakat tercatat secara real-time, aman, dan langsung tersalurkan ke Kas Daerah. Dengan sistem ini, proses pengelolaan pembayaran menjadi lebih terintegrasi, transparan, dan efisien.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Manajemen e-Billing Terpusat: Sistem memfasilitasi pembuatan dan pemantauan kode bayar (billing code) untuk berbagai jenis retribusi, seperti retribusi kebersihan, parkir, pelayanan kesehatan, hingga retribusi pasar dari seluruh OPD pemungut dalam satu dashboard terpadu.",
+                    "Integrasi Multi-Kanal Pembayaran: Sistem mendukung integrasi langsung dengan Bank Daerah atau Bank Persepsi untuk menyediakan berbagai metode pembayaran bagi wajib retribusi, seperti Virtual Account (VA), QRIS dinamis, transfer bank, hingga pembayaran melalui gerai ritel (minimarket).",
+                    "Rekonsiliasi & Settlement Otomatis: Sistem secara otomatis melakukan pencocokan data pembayaran dari pihak perbankan dengan Surat Ketetapan Retribusi Daerah (SKRD) yang diterbitkan. Hal ini dapat meminimalkan kesalahan pencatatan manual (human error), mencegah selisih kas, serta mempercepat proses penyusunan Laporan Pertanggungjawaban (LPJ)."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-pelayanan",
+    "label": "Sistem Pelayanan",
+    "megaMenuChildId": "sistem-pelayanan",
+    "sidebarAsFlat": false,
+    "order": 3,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pelayanan-online-pbb",
+        "title": "Sistem Pelayanan Online PBB",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memberikan pelayanan Pajak Bumi dan Bangunan (PBB) kepada masyarakat atau wajib pajak secara lebih mudah dan efisien. Sistem ini menjadi sarana layanan digital yang dapat diakses oleh masyarakat kapan saja dan di mana saja, sehingga mempermudah wajib pajak dalam mengurus berbagai kebutuhan terkait PBB. Melalui sistem ini, wajib pajak dapat melakukan proses secara mandiri mulai dari pendaftaran layanan, pengecekan informasi pajak, hingga proses pembayaran dan memperoleh bukti pembayaran secara digital.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Fitur yang Lengkap: Sistem menyediakan berbagai fitur layanan seperti pengajuan pelayanan PBB, pencetakan e-SPPT, pencetakan e-STTS, pencetakan catatan pembayaran, pengecekan tunggakan, serta fasilitas pembayaran pajak secara online.",
+                    "Integrasi Pembayaran yang Mudah: Sistem mendukung berbagai metode pembayaran digital seperti Virtual Account (VA) dan QRIS sehingga mempermudah wajib pajak dalam melakukan pembayaran.",
+                    "Akses Mudah dan Cepat: Sistem dapat diakses melalui perangkat web maupun mobile, sehingga wajib pajak dapat menggunakan layanan kapan saja dan di mana saja.",
+                    "Sesuai dengan Ketentuan Pemerintah Daerah: Sistem dirancang untuk mendukung implementasi pengelolaan PBB sesuai dengan ketentuan dan Peraturan Daerah yang berlaku."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pelayanan-online-bphtb",
+        "title": "Sistem Pelayanan Online BPHTB",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memberikan pelayanan Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB) kepada masyarakat. Layanan ini mendukung proses administrasi yang sering dilakukan oleh Notaris atau Pejabat Pembuat Akta Tanah (PPAT) dalam pengurusan BPHTB. Melalui sistem ini, proses dapat dilakukan secara lebih efisien mulai dari pendaftaran, pengajuan berkas, monitoring status dokumen, hingga proses pembayaran yang dapat dilakukan secara mandiri dan terintegrasi.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Fitur yang Lengkap: Sistem menyediakan berbagai fitur layanan seperti PPAT Online, monitoring berkas, pengecekan tagihan BPHTB, hingga fasilitas pembayaran secara online.",
+                    "Integrasi Pembayaran yang Mudah: Sistem mendukung berbagai metode pembayaran digital seperti Virtual Account (VA) dan QRIS sehingga mempermudah proses pembayaran BPHTB.",
+                    "Akses Mudah dan Cepat: Sistem dapat diakses melalui perangkat web maupun mobile, sehingga memudahkan notaris, PPAT, maupun wajib pajak dalam melakukan proses administrasi BPHTB kapan saja dan di mana saja.",
+                    "Sesuai dengan Ketentuan Pemerintah Daerah: Sistem dirancang untuk mendukung implementasi pelayanan BPHTB sesuai dengan ketentuan serta Peraturan Daerah yang berlaku."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pelayanan-online-pajak-lainnya",
+        "title": "Sistem Pelayanan Online Pajak lainnya",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memberikan pelayanan perpajakan kepada masyarakat selain Pajak Bumi dan Bangunan (PBB) dan Bea Perolehan Hak atas Tanah dan Bangunan (BPHTB). Layanan ini memudahkan wajib pajak dalam melakukan berbagai proses perpajakan, mulai dari pendaftaran, pelaporan pajak, pengecekan tunggakan, proses pembayaran hingga cetakannya. Dengan sistem yang terintegrasi, wajib pajak dapat berperan lebih aktif dan mandiri dalam mengelola kewajiban perpajakannya.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Fitur yang Lengkap: Sistem menyediakan berbagai fitur layanan seperti pendaftaran WP OP, pelaporan pajak, pengecekan tagihan, proses pembayaran, hingga pencetakan bukti pelunasan pajak.",
+                    "Integrasi Pembayaran yang Mudah: Sistem mendukung berbagai metode pembayaran digital seperti Virtual Account (VA) dan QRIS, sehingga memudahkan wajib pajak dalam melakukan pembayaran pajak.",
+                    "Akses Mudah dan Cepat: Sistem dapat diakses melalui perangkat web maupun mobile, sehingga wajib pajak dapat melakukan pelaporan dan pembayaran pajak kapan saja dan di mana saja.",
+                    "Sesuai dengan Ketentuan Pemerintah Daerah: Sistem dirancang untuk mendukung implementasi pelayanan pajak daerah sesuai dengan ketentuan serta Peraturan Daerah yang berlaku."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pelayanan-online-retribusi-daerah",
+        "title": "Sistem Pelayanan Online Retribusi Daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Organisasi Perangkat Daerah (OPD) dalam memberikan pelayanan kepada Wajib Retribusi secara lebih efektif dan efisien. Melalui sistem ini, Wajib Retribusi dapat dengan mudah mengajukan layanan, melakukan pengecekan tagihan, hingga melakukan pembayaran retribusi. Sistem yang terintegrasi juga memungkinkan OPD memberikan respons yang lebih cepat terhadap setiap pengajuan layanan, sehingga Wajib Retribusi dapat berperan aktif dalam memanfaatkan layanan yang disediakan oleh pemerintah daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Fitur yang Lengkap: Sistem menyediakan berbagai fitur layanan seperti penerbitan Surat Ketetapan Retribusi Daerah (SKRD), pengecekan dan pembayaran tunggakan retribusi, hingga penerbitan Surat Setoran Retribusi Daerah (SSRD).",
+                    "Integrasi Pembayaran yang Mudah: Sistem mendukung berbagai metode pembayaran digital seperti Virtual Account (VA) dan QRIS, sehingga mempermudah proses pembayaran retribusi oleh Wajib Retribusi.",
+                    "Akses Mudah dan Cepat: Sistem dapat diakses melalui perangkat web maupun mobile, sehingga Wajib Retribusi dapat mengakses layanan kapan saja dan di mana saja.",
+                    "Sesuai dengan Ketentuan Pemerintah Daerah: Sistem dirancang untuk mendukung proses pelayanan retribusi daerah sesuai dengan ketentuan dan Peraturan Daerah yang berlaku."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pelayanan-online-billing-gateway",
+        "title": "Sistem Pelayanan Online Billing Gateway",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memfasilitasi proses penerimaan dan pembayaran berbagai jenis pajak maupun tagihan lainnya. Sistem ini juga dapat digunakan oleh wajib pajak maupun masyarakat secara luas untuk melakukan pembayaran secara lebih mudah, cepat, dan aman. Selain itu, sistem ini mendukung kerja sama integrasi dengan berbagai pihak yang membutuhkan konektivitas pembayaran sistem secara berkelanjutan.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Integrasi Mudah: Sistem dirancang berbasis integrasi sehingga dapat dengan mudah terhubung dengan berbagai sistem eksternal seperti perbankan maupun aplikasi pihak ketiga yang membutuhkan proses pembayaran terpusat.",
+                    "Akses Luas, Mudah dan Cepat: Sistem dapat diakses melalui berbagai platform digital sehingga memudahkan wajib pajak maupun masyarakat dalam melakukan pembayaran kapan saja dan di mana saja.",
+                    "Sesuai dengan Ketentuan Pemerintah Daerah: Sistem dirancang untuk mendukung proses penerimaan dan pembayaran sesuai dengan ketentuan serta Peraturan Daerah yang berlaku, sehingga pengelolaan penerimaan daerah menjadi lebih tertib, transparan, dan akuntabel."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "e-kiosk-pelayanan-mandiri",
+        "title": "E-KiosK pelayanan mandiri",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi anjungan pelayanan mandiri (E-Kiosk) yang andal untuk mendukung pelayanan kepada masyarakat maupun operasional Pemerintah Daerah. Melalui perangkat ini, masyarakat dapat mengakses berbagai layanan secara mandiri sehingga proses pelayanan menjadi lebih cepat, praktis, dan efisien.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Layanan Mandiri Terpadu: E-Kiosk dapat digunakan sebagai anjungan mandiri untuk berbagai kebutuhan seperti memperoleh informasi layanan, melakukan pembayaran, mengambil nomor antrean, melakukan konfirmasi kehadiran, serta berbagai layanan administrasi lainnya.",
+                    "Pencetakan Bukti Transaksi (Receipt): Perangkat Kiosk dilengkapi dengan fitur pencetakan receipt yang dapat digunakan sebagai bukti transaksi, nomor antrean, maupun bukti pembayaran",
+                    "Mengurangi Kepadatan Antrean: Sistem membantu mengurangi kepadatan antrean pada lingkungan kantor dinas dengan memberikan alternatif layanan mandiri bagi masyarakat.",
+                    "Pelayanan Lebih Efektif dan Efisien: Proses pelayanan menjadi lebih cepat dan efisien karena masyarakat dapat langsung mengakses layanan tanpa harus melalui proses administrasi manual yang panjang.",
+                    "Mendorong Kemandirian Wajib Pajak: Sistem ini mendorong wajib pajak untuk lebih proaktif dalam mengakses informasi dan menyelesaikan kewajiban perpajakannya secara mandiri"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "notifikasi-whatapps",
+        "title": "Notifikasi Whatapps",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam meningkatkan kepatuhan wajib pajak melalui sistem notifikasi otomatis. Melalui layanan ini, Pemerintah Daerah dapat mengirimkan pengingat kepada wajib pajak terkait informasi tagihan, tunggakan, maupun tanggal jatuh tempo pembayarannya. Sistem ini membantu proses pengelolaan pajak menjadi lebih terukur, terpantau, serta mendukung kinerja pemerintah daerah yang lebih efektif dan efisien.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Efektif dan Efisien: Sistem notifikasi membantu pemerintah daerah dalam menyampaikan informasi penting kepada wajib pajak secara otomatis tanpa harus melakukan komunikasi manual.",
+                    "Cepat dan Aktual: Informasi terkait tagihan, jatuh tempo, maupun tunggakan dapat dikirimkan secara cepat sehingga wajib pajak memperoleh informasi secara tepat waktu.",
+                    "Meningkatkan Daya Saing Pendapatan: Dengan adanya pengingat pembayaran secara berkala, tingkat kepatuhan wajib pajak dapat meningkat sehingga berkontribusi terhadap optimalisasi Pendapatan Asli Daerah (PAD)."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-layanan-pemutakhiran-pajak-daerah",
+    "label": "Sistem Layanan Pemutakhiran Pajak Daerah",
+    "megaMenuChildId": "sistem-layanan-pemutakhiran-pajak-daerah",
+    "sidebarAsFlat": false,
+    "order": 4,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pemutakhiran-peta-objek-pajak-daerah",
+        "title": "Sistem Pemutakhiran peta objek pajak daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang sebagai sarana bagi Pemerintah Daerah untuk menerima, mengelola, dan memanfaatkan data peta yang berasal dari dinas terkait maupun Badan Pertanahan Nasional (BPN). Sistem ini mendukung proses digitalisasi pemetaan objek pajak serta memvisualisasikan data pajak secara geografis sehingga memudahkan proses analisis dan pengelolaan data perpajakan daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Visualisasi Data Pajak Berbasis Peta: Sistem menyajikan hasil pemetaan objek pajak yang berasal dari data dinas terkait maupun data dari BPN, sehingga memudahkan dalam mengidentifikasi batas wilayah, melihat data wajib pajak dan objek pajak, serta melakukan analisis lebih lanjut terhadap potensi pajak daerah.",
+                    "Dukungan Multi-Layer Peta: Sistem mendukung berbagai layer peta seperti Google Road, Google Satellite, OpenStreetMap, Bing Satellite, dan Waze, sehingga memudahkan proses visualisasi dan analisis data sesuai dengan kebutuhan.",
+                    "Pengelolaan Data Pajak yang Lebih Mudah: Dinas dapat dengan mudah mengelola data wajib pajak dan objek pajak secara langsung melalui sistem, termasuk melakukan proses verifikasi dan pemutakhiran data.",
+                    "Analisis Zona Nilai Tanah (ZNT): Sistem menyediakan fitur analisis Zona Nilai Tanah (ZNT) melalui peta tematik yang tersedia sehingga dapat membantu Pemerintah Daerah dalam melakukan kajian nilai tanah dan potensi penerimaan pajak daerah.",
+                    "Aplikasi Pendataan Lapangan Berbasis Android: Solusi ini juga menyediakan aplikasi pendataan berbasis Android yang dapat digunakan oleh petugas atau surveyor dalam melakukan pendataan objek pajak secara langsung di lapangan.",
+                    "Mode Offline dan Online: Aplikasi dapat digunakan dalam mode offline maupun online, sehingga petugas tetap dapat melakukan pendataan ketika tidak tersedia koneksi internet dan melakukan sinkronisasi data secara otomatis ketika koneksi internet tersedia."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pengelolaan-retribusi-jasa-perizinan-tertentu",
+        "title": "Sistem pengelolaan retribusi jasa perizinan tertentu",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Sistem ini dirancang untuk mendukung pelayanan terpadu pada dinas perizinan (seperti Persetujuan Bangunan Gedung/PBG, Izin Trayek, atau Izin Usaha Perikanan), memastikan setiap penerbitan izin telah memenuhi kewajiban retribusi secara transparan dan akuntabel.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Kalkulasi Tarif Otomatis: Sistem secara cerdas menghitung besaran retribusi berdasarkan indeks dan parameter teknis perizinan yang diatur dalam Peraturan Daerah terkini (misalnya perhitungan luas bangunan, indeks terintegrasi, dan tingkat kompleksitas untuk PBG).",
+                    "Penerbitan SKRD Elektronik: Memfasilitasi pembuatan Surat Ketetapan Retribusi Daerah (SKRD) secara otomatis, langsung dilengkapi dengan kode bayar (billing) yang terhubung ke channel perbankan.",
+                    "Sinkronisasi Status Pembayaran (Clearance): Memastikan dokumen izin teknis hanya dapat dicetak atau disahkan oleh sistem setelah tervalidasi bahwa retribusi telah dibayar lunas oleh pemohon ke Rekening Kas Umum Daerah (RKUD)."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pendataan-objek-pajak-daerah",
+        "title": "Sistem Pendataan objek pajak daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini dirancang untuk membantu Pemerintah Daerah dalam memastikan setiap potensi pajak di wilayahnya dapat terdata secara akurat dan terstruktur, mulai dari PBB-P2, Pajak Reklame, hingga Pajak Barang dan Jasa Tertentu (PBJT). Sistem ini bertujuan untuk meminimalkan adanya objek pajak yang belum terdaftar (hidden potential), sehingga potensi penerimaan pajak daerah dapat dioptimalkan. Sistem ini juga dirancang selaras dengan implementasi Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintahan Daerah (UU HKPD).",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Verifikasi Data Objek Pajak di Lapangan: Proses verifikasi dilakukan dengan mengirimkan petugas lapangan untuk mengonfirmasi data objek pajak secara langsung kepada subjek pajak di lokasi.",
+                    "Identifikasi Objek Pajak: Petugas lapangan melakukan identifikasi terhadap objek pajak baru maupun objek pajak yang mengalami perubahan, termasuk melakukan pengukuran dan pencatatan kondisi objek pajak di lapangan.",
+                    "Pemeriksaan dan Pengawasan Kualitas Data: Sistem mendukung proses pemeriksaan data objek pajak agar tercatat dengan format yang benar, jelas, dan lengkap, serta melakukan validasi terhadap nilai objek pajak berdasarkan kondisi aktual yang ditemukan di lapangan."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-kegiatan-pemetaan",
+        "title": "Sistem Kegiatan Pemetaan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini merupakan bagian dari kegiatan fiscal cadaster, yaitu proses pembuatan peta berbasis foto geometri melalui pemotretan udara menggunakan drone. Metode ini bertujuan untuk memperoleh data spasial seperti posisi, luas, dan dimensi objek dari hasil pengolahan foto udara. Pemetaan menggunakan metode fotogrametri dapat dilakukan secara relatif cepat, akurat, dan fleksibel, dengan biaya yang lebih efisien, serta tetap menjaga kualitas resolusi spasial dan meminimalkan risiko pada wilayah yang sulit dijangkau atau berisiko tinggi.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pengambilan Foto Udara: Proses pengambilan foto dilakukan dengan menerbangkan drone pada wilayah yang akan dipetakan. Kegiatan ini didukung dengan pengukuran menggunakan GPS Geodesi serta memperhatikan batas wilayah administrasi yang berlaku.",
+                    "Pengolahan Data Foto: Data foto udara diolah melalui proses orthomosaic (penggabungan beberapa foto menjadi satu citra peta), digitasi untuk mengonversi objek geografis dari peta raster menjadi data vektor, serta georeferencing untuk mengubah koordinat piksel menjadi koordinat geografis yang sebenarnya.",
+                    "Penyajian Peta: Hasil pengolahan data disajikan dalam bentuk peta blok digital objek PBB-P2 yang dilengkapi dengan peta batas wilayah desa/kelurahan serta koordinat posisi setiap objek pajak PBB-P2."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "sistem-pemutakhiran-zona-nilai-tanah-znt",
+        "title": "Sistem Pemutakhiran Zona Nilai Tanah (ZNT)",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini untuk pemutakhiran Zona Nilai Tanah (ZNT) dilaksanakan melalui kegiatan survei lapangan untuk memperoleh informasi harga terkini dari objek pajak, baik tanah maupun bangunan. Proses ini bertujuan untuk memastikan bahwa nilai yang digunakan dalam penetapan pajak daerah dapat mendekati kondisi harga pasar yang sebenarnya.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Analisis ZNT Secara Menyeluruh: Analisis ZNT dilakukan untuk seluruh wilayah sehingga dapat memengaruhi besaran Nilai Jual Objek Pajak (NJOP) agar lebih mendekati harga pasar yang berlaku.",
+                    "Mendukung Penetapan NPOP BPHTB yang Lebih Akurat: Penyesuaian NJOP dapat berdampak pada besaran Nilai Perolehan Objek Pajak (NPOP) dalam perhitungan BPHTB, sehingga nilai transaksi yang tercatat dapat lebih mencerminkan harga pasar yang sebenarnya.",
+                    "Penerapan Kebijakan Stimulus: Apabila kemampuan masyarakat dalam membayar PBB masih rendah, Pemerintah Daerah dapat menerapkan kebijakan stimulus atau keringanan sesuai dengan ketentuan yang berlaku.",
+                    "Integrasi dengan Aplikasi: Solusi ini juga mencakup proses pembaruan data Zona Nilai Tanah (ZNT) yang terintegrasi langsung ke dalam aplikasi SmartGov Tax Map, sehingga data dapat dimanfaatkan untuk analisis dan pengambilan keputusan secara lebih efektif."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "layanan-manage-service",
+    "label": "Layanan Manage Service",
+    "megaMenuChildId": "layanan-manage-service",
+    "sidebarAsFlat": false,
+    "order": 5,
+    "subMenus": [
+      {
+        "subSlug": "cloud",
+        "title": "Cloud",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini menyediakan layanan managed service berbasis cloud untuk pengelolaan server dan data pada aplikasi. Layanan ini dirancang untuk mendukung ketersediaan sistem (high availability), sehingga aplikasi dapat berjalan secara stabil, aman, dan dapat diakses secara berkelanjutan oleh pengguna.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Scalability: Infrastruktur cloud memungkinkan penyesuaian spesifikasi server secara fleksibel sesuai dengan kebutuhan sistem, sehingga kapasitas dapat ditingkatkan atau diturunkan dengan mudah.",
+                    "Recovery: Sistem dilengkapi dengan mekanisme Disaster Recovery Management untuk menjaga keamanan data serta memastikan pemulihan layanan secara cepat apabila terjadi gangguan atau kejadian di luar dugaan.",
+                    "Less Investment Cost: Pemerintah Daerah tidak perlu menyediakan infrastruktur fisik tambahan seperti ruang server atau perangkat keras baru, sehingga dapat mengurangi biaya investasi awal.",
+                    "Speed: Proses pemeliharaan sistem, pembaruan, maupun peningkatan kapasitas server dapat dilakukan dengan lebih cepat dan efisien."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-integrasi",
+    "label": "Sistem Integrasi",
+    "megaMenuChildId": "sistem-integrasi",
+    "sidebarAsFlat": false,
+    "order": 6,
+    "subMenus": [
+      {
+        "subSlug": "integrasi-data-pajak-daerah",
+        "title": "Integrasi data pajak daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini berbasis Application Programming Interface (API) yang dirancang untuk mempermudah proses pertukaran data pajak daerah antarinstansi terkait. Melalui sistem ini, data dapat terhubung secara langsung sehingga proses pencatatan, validasi, dan pemanfaatan data dapat dilakukan secara lebih akurat, terintegrasi, dan efisien.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Digunakan oleh Berbagai Instansi: Mekanisme integrasi data pada aplikasi ini telah digunakan oleh beberapa instansi dalam mendukung pertukaran data perpajakan secara terintegrasi.",
+                    "Integrasi Berbasis API: Sistem menggunakan metode integrasi berbasis API yang memudahkan proses komunikasi sistem secara Host-to-Host antarinstansi.",
+                    "Pertukaran Data Sesuai Kebutuhan Instansi: Sistem mendukung proses pertukaran data yang dapat disesuaikan dengan kebutuhan masing-masing dinas atau instansi terkait.",
+                    "Sesuai Standar dan Ketentuan Instansi: Metode integrasi dirancang mengikuti standar teknis dan ketentuan yang berlaku pada masing-masing instansi sehingga mendukung pengembangan sistem secara berkelanjutan.",
+                    "Dokumentasi Integrasi: Sistem dilengkapi dengan user manual serta dokumen teknis integrasi yang dapat digunakan sebagai panduan dalam proses implementasi dan pengembangan sistem."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "integrasi-pembayaran-pajak-daerah",
+        "title": "Integrasi pembayaran pajak daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini berbasis Application Programming Interface (API) yang dirancang untuk mempermudah proses pembayaran tagihan pajak daerah oleh wajib pajak, baik secara individu maupun kolektif. Sistem ini memastikan proses transaksi dan pencatatan pembayaran dapat dilakukan secara lebih rapi, terintegrasi, dan akurat dalam sistem pengelolaan pajak daerah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Digunakan oleh Berbagai BPD: Metode integrasi pada aplikasi ini telah digunakan oleh lebih dari 11 Bank Pembangunan Daerah (BPD) dalam mendukung proses pembayaran pajak daerah.",
+                    "Integrasi Berbasis REST API: Sistem menggunakan metode integrasi REST API yang memudahkan Bank Pembangunan Daerah dalam melakukan komunikasi sistem secara Host-to-Host.",
+                    "Standar Bank Indonesia: Sistem mendukung metode integrasi pembayaran sesuai dengan standar dan ketentuan Bank Indonesia, mengacu pada dokumen SNAP BI, baik untuk metode Virtual Account (VA) maupun QRIS.",
+                    "Pengembangan Berkelanjutan: Sistem ini merupakan hasil pengembangan berkelanjutan dari versi sebelumnya yang telah disesuaikan dengan implementasi kebijakan terbaru, termasuk penerapan Undang-Undang Hubungan Keuangan antara Pemerintah Pusat dan Pemerintah Daerah (UU HKPD).",
+                    "Data Response yang Lengkap dan Fleksibel: Sistem menyediakan data respons atau callback yang lengkap untuk mendukung pengelolaan pajak daerah. Struktur data tersebut juga dapat dikustomisasi sesuai dengan kebutuhan serta ketentuan dalam Peraturan Daerah.",
+                    "Dokumentasi Integrasi: Sistem dilengkapi dengan user manual serta dokumen teknis integrasi yang dapat digunakan oleh pihak perbankan atau instansi terkait dalam proses implementasi dan pengembangan sistem."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "layanan-pelatihan",
+    "label": "Layanan Pelatihan",
+    "megaMenuChildId": "layanan-pelatihan",
+    "sidebarAsFlat": false,
+    "order": 7,
+    "subMenus": [
+      {
+        "subSlug": "pelatihan-online",
+        "title": "Pelatihan Online",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Pelatihan online SmartGov dirancang untuk instansi yang membutuhkan metode pembelajaran yang lebih fleksibel dan efisien tanpa mengurangi kedalaman materi teknis yang disampaikan. Melalui pelatihan ini, peserta tetap dapat memperoleh pemahaman yang komprehensif mengenai penggunaan sistem melalui sesi pendampingan daring yang terstruktur.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Penerapan Adaptif: Pendampingan dilakukan secara daring dan disesuaikan dengan kebutuhan masing-masing dinas atau unit kerja sehingga materi yang disampaikan lebih relevan dengan kebutuhan operasional instansi.",
+                    "Akses Dokumentasi Digital: Peserta mendapatkan akses ke dokumentasi dan user manual digital yang dapat dipelajari secara mandiri sehingga memudahkan proses pembelajaran serta referensi dalam penggunaan sistem di kemudian hari."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "subSlug": "pelatihan-onsite",
+        "title": "Pelatihan Onsite",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Pelatihan onsite dirancang untuk memberikan pengalaman pembelajaran secara langsung bagi pengguna sistem di lingkungan kerja masing-masing instansi. Melalui pelatihan ini, peserta dapat melakukan praktik penggunaan aplikasi secara langsung serta berdiskusi secara mendalam dengan tim teknis. Metode ini memastikan setiap kaidah, standar operasional, dan kebutuhan instansi dapat terpenuhi dalam proses implementasi dan pengembangan sistem secara berkelanjutan.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "On-Site: Pelatihan dilaksanakan secara langsung di lokasi instansi sehingga peserta dapat melakukan praktik penggunaan aplikasi secara langsung dan memastikan sistem dapat dioperasikan dengan baik oleh pengguna.",
+                    "Standar Spesifik Instansi: Metode pelatihan dapat disesuaikan dengan aturan teknis, prosedur kerja, serta protokol keamanan yang berlaku pada masing-masing instansi.",
+                    "Workshop Dokumentasi: Sesi pelatihan dilengkapi dengan pembahasan dokumen dan user manual secara bersama-sama dengan tim teknis untuk meminimalkan kendala pada saat implementasi maupun operasional di masa mendatang.",
+                    "Rekam Jejak Nyata: Strategi pelatihan ini merupakan bagian dari ekosistem SmartGov yang telah digunakan dan dipercaya oleh berbagai Pemerintah Daerah dalam mendukung implementasi sistem pemerintahan berbasis digital."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

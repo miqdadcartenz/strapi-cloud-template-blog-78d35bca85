@@ -1,5 +1,33 @@
 import type { Schema, Struct } from '@strapi/strapi';
 
+export interface CitigovKlienCitigovKlienCard extends Struct.ComponentSchema {
+  collectionName: 'components_citigov_klien_citigov_klien_cards';
+  info: {
+    displayName: 'Citigov Klien Card';
+  };
+  attributes: {
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    logo: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    nama_daerah: Schema.Attribute.String;
+    produk_url: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface CitigovKlienCitigovKlienSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_citigov_klien_citigov_klien_sections';
+  info: {
+    displayName: 'Citigov Klien Section';
+  };
+  attributes: {
+    badge: Schema.Attribute.String;
+    cards: Schema.Attribute.Component<'citigov-klien.citigov-klien-card', true>;
+    rating: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
 export interface HomeAboutSection extends Struct.ComponentSchema {
   collectionName: 'components_home_about_sections';
   info: {
@@ -26,6 +54,7 @@ export interface HomeHeroSlide extends Struct.ComponentSchema {
   attributes: {
     linkProdukHero: Schema.Attribute.String;
     logo: Schema.Attribute.Media<'images'>;
+    show: Schema.Attribute.Boolean;
     solutions: Schema.Attribute.JSON;
     title: Schema.Attribute.String;
   };
@@ -434,6 +463,8 @@ export interface TentangKamiTeamMember extends Struct.ComponentSchema {
 declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
+      'citigov-klien.citigov-klien-card': CitigovKlienCitigovKlienCard;
+      'citigov-klien.citigov-klien-section': CitigovKlienCitigovKlienSection;
       'home.about-section': HomeAboutSection;
       'home.hero-slide': HomeHeroSlide;
       'home.section-artikel': HomeSectionArtikel;

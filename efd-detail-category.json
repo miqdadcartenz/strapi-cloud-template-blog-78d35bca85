@@ -1,0 +1,655 @@
+[
+  {
+    "categoryId": "sistem-pengawasan-objek-pajak-barang-dan-jasa-tertentu",
+    "label": "Sistem pengawasan Objek Pajak Barang dan Jasa Tertentu",
+    "megaMenuChildId": "sistem-pengawasan-objek-pajak-barang-dan-jasa-tertentu",
+    "sidebarAsFlat": true,
+    "order": 1,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pengawasan-objek-pajak-barang-dan-jasa-tertentu",
+        "title": "Sistem pengawasan Objek Pajak Barang dan Jasa Tertentu",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini Merekam dan memonitor transaksi wajib pajak hotel, restoran, kafe, hiburan, parkir, dan lainnya",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Jenis solusi perekaman yang dipasang dapat disesuaikan dengan kondisi wajib pajak",
+                    "POS Online (Android based) untuk WP yang belum menggunakan sistem penjualan online",
+                    "Web Service/Software untuk WP yang telah menggunakan POS berbasis cloud,",
+                    "Interceptor Box/Software EFD untuk WP yang menggunakan sistem basis data.",
+                    "Perekaman dapat bersifat real-time dan/atau tergantung dengan kondisi dan availabilitas data wajib pajak",
+                    "POS Online mencakup aplikasi rekam transaksi khusus seperti sistem rekam transaksi kafe, restoran, retribusi, pariwisata, parkir, dan hotel, atau simple kalkulator online, sesuai kebutuhan operasional bisnis dan dapat digunakan secara hybrid offline/online.",
+                    "POS Online dapat melakukan pembayaran dengan QRIS, Debit/Credit, dan E Money, selain itu dapat membayar PPOB.",
+                    "Interceptor Box dan Software EFD dapat mengakomodir 100+ jenis basis data, 100+ jenis online pos, serta merekam transaksi platform order online seperti - - GrabFood, GoFood, Shopee Food.",
+                    "Software EFD juga menyediakan perekaman transaksi melalui API atau File Sharing seperti FTP/SFTP, Google Drive dan lainnya."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-pengawasan-objek-pajak-mineral-bukan-logam-dan-batuan",
+    "label": "Sistem pengawasan Objek Pajak Mineral Bukan Logam dan Batuan",
+    "megaMenuChildId": "sistem-pengawasan-objek-pajak-mineral-bukan-logam-dan-batuan",
+    "sidebarAsFlat": true,
+    "order": 2,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pengawasan-objek-pajak-mineral-bukan-logam-dan-batuan",
+        "title": "Sistem pengawasan Objek Pajak Mineral Bukan Logam dan Batuan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini memberikan platform untuk mempermudah wajib pajak dan pemerintah untuk melakukan pelaporan pajak dan monitoring pajak MBLB untuk mengoptimasi penerimaan MBLB",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Standard Process",
+                  "items": [
+                    "Seluruh transaksi mineral tercatat dalam perekaman digital melalui sistem POS online dan mencetak faktur penjualan."
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Field Surveillance",
+                  "items": [
+                    "Kamera yang dipasang merekam plat nomor & menghitung setiap kendaraan jenis truk yang lewat di jalan tambang."
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Analytics",
+                  "items": [
+                    "Seluruh data yang didapat dari sistem POS online, kamera CCTV dan pelaporan pajak bulanan, di tampilkan secara langsung melalui dashboard analisis"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Field Monitoring",
+                  "items": [
+                    "Aplikasi mobile untuk petugas melakukan pemeriksaan truk di jalan/pos penjagaan"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-pengawasan-objek-pajak-air-tanah-dan-permukaan",
+    "label": "Sistem pengawasan Objek Pajak Air Tanah dan permukaan",
+    "megaMenuChildId": "sistem-pengawasan-objek-pajak-air-tanah-dan-permukaan",
+    "sidebarAsFlat": true,
+    "order": 3,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pengawasan-objek-pajak-air-tanah-dan-permukaan",
+        "title": "Sistem pengawasan Objek Pajak Air Tanah dan permukaan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Smart Water Meter adalah solusi untuk mendapatkan data riil konsumsi air tanah / air permukaan pada WP dengan bisnis yang berpotensi menggunakan air dalam jumlah besar (seperti hotel, mall, kantor, dan sebagainya) sebagai dasar perhitungan pajak air dan memonitor penggunaan air tanah melalui dashboard, selain itu juga",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Terdapat 3 jenis solusi smart water meter yang dapat diimplementasikan, yaitu:",
+                  "items": [
+                    "EFD Pulse Water Meter Reader, pemasangan pada alat water meter yang sudah compatible dengan alat pengiriman data.",
+                    "EFD Smart Water Meter Device, pemasangan water meter terhadap wp yang belum menggunakan atau menggunakan water meter yang compatible dengan alat pengiriman data.",
+                    "EFD Water Meter Smart Tap, pemasangan pada pipa besar yang sulit untuk di tap oleh meteran"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Detail Solusi",
+                  "items": [
+                    "Selain dari solusi yang ditawarkan, Cartenz menyediakan opsi untuk menggunakan GSM, NB-IOT maupun LoRaWAN  untuk menjangkau berbagai area tergantung dengan kondisi lokasi pipa",
+                    "Dashboard kami berisikan berbagai informasi dari data Air maupun data Alat, seperti Overview dan Details terkait seperti jumlah, berapa yang aktif dan tidak aktif, berapa yang mengirim data dan tidak, serta kondisi operasional bila terjadi isu di lapangan, apakah tim sedang/sudah menyelesaikan.",
+                    "Dashboard juga berisikan informasi secara geospatial bila dibutuhkan.",
+                    "Dashboard berisikan informasi terkait penggunaan air dan  perpajakannya seperti berapa banyak air yang digunakan pada area tersebut dan  potensi pendapatan pajaknya.",
+                    "Informasi di Dashboard dapat dilihat atau filter per area atau per wajib pajak, sehingga bisa dilakukan analisa lebih spesifik bila dibutuhkan"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-uji-petik-digital-snap-struk",
+    "label": "Sistem uji petik digital (snap struk)",
+    "megaMenuChildId": "sistem-uji-petik-digital-snap-struk",
+    "sidebarAsFlat": true,
+    "order": 4,
+    "subMenus": [
+      {
+        "subSlug": "sistem-uji-petik-digital-snap-struk",
+        "title": "Sistem uji petik digital (snap struk)",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini membantu verifikasi transaksi kegiatan perekaman dan monitoring transaksi wajib pajak dalam bentuk uji petik secara digital oleh masyarakat atau staf pemerintah daerah",
+                  "items": [
+                    "Solusi ini umumnya bekerja dengan mengunggah foto struk yang didapatkan setelah melakukan transaksi di lokasi WP",
+                    "Foto unggahan tersebut pada struk akan menjadi pembanding dalam sistem monitoring transaksi EFD, dan secara otomatis akan verifikasi apakah transaksi tersebut benar terekam dalam sistem",
+                    "Meningkatkan value kegiatan dengan melibatkan kontribusi aktif masyarakat dalam pengawasan pelaporan pajak WP.",
+                    "Aplikasi terdapat leaderboards untuk masyarakat yang aktif berkontribusi dan dapat menjadi dasar kegiatan insentif bila diperlukan."
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini mencakup",
+                  "items": [
+                    "Aplikasi yang bisa diakses oleh staff atau masyarakat yang bisa diakses di playstore",
+                    "Dashboard verifikasi data beserta laporannya yang bisa diakses oleh staff pemda",
+                    "User Manual Dashboard dan Aplikasi"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-uji-petik-cctv",
+    "label": "Sistem uji petik cctv",
+    "megaMenuChildId": "sistem-uji-petik-cctv",
+    "sidebarAsFlat": true,
+    "order": 5,
+    "subMenus": [
+      {
+        "subSlug": "sistem-uji-petik-cctv",
+        "title": "Sistem uji petik cctv",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini membantu verifikasi transaksi kegiatan perekaman dan monitoring transaksi wajib pajak dalam bentuk people counting dengan menggunakan CCTV di wajib pajak - Solusi ini umumnya bekerja dengan menghitung jumlah orang yang masuk dan bertransaksi di wajib pajak, hal tersebut dibandingkan dengan transaksi yang direkam oleh Solusi Perekaman - Data tersebut di monitor dalam bentuk Dashboard - Meningkatkan kredibilitas perekaman transaksi - Bisa integrasi dengan CCTV yang sudah ada di wajib pajak (dengan model tertentu)",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Model yang digunakan HIK VISION xx xx",
+                  "items": [
+                    "Solusi ini mencakup"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Alat CCTV bila diperlukan",
+                    "Dashboard verifikasi data beserta laporannya yang bisa diakses oleh staf pemda",
+                    "User Manual Dashboard"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "dashboard-monitoring-pajak-multi-vendor",
+    "label": "Dashboard monitoring pajak multi-vendor",
+    "megaMenuChildId": "dashboard-monitoring-pajak-multi-vendor",
+    "sidebarAsFlat": true,
+    "order": 6,
+    "subMenus": [
+      {
+        "subSlug": "dashboard-monitoring-pajak-multi-vendor",
+        "title": "Dashboard monitoring pajak multi-vendor",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini menyatukan data yang berasal dari berbagai sumber dari vendor, atau sistem yang berbeda-beda dalam satu Dashboard. Vendor terkait dapat menggunakan API Integration yang sudah tersedia untuk pengiriman data",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini mencakup :",
+                  "items": [
+                    "API Integration Document",
+                    "Aktivasi modul Multi Vendor"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-e-warning-wajib-pajak",
+    "label": "Sistem e-warning wajib pajak",
+    "megaMenuChildId": "sistem-e-warning-wajib-pajak",
+    "sidebarAsFlat": true,
+    "order": 7,
+    "subMenus": [
+      {
+        "subSlug": "sistem-e-warning-wajib-pajak",
+        "title": "Sistem e-warning wajib pajak",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini membantu mengirimkan pesan peringatan kepada wajib pajak untuk meningkatkan kesadaran terkait kondisi alat perekaman transaksi - Sistem mengirimkan notifikasi melalui kanal komunikasi online: What App / Email - Kepada Wajib Pajak sebagai bentuk peringatan atau upaya mengingatkan apabila sistem mendeteksi bahwa solusi perekaman transaksi yang dipasang di lokasi - -WP terpantau inactive/offline",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Message ini bisa di custom sesuai dengan template yang diinginkan pemerintah daerah",
+                  "items": [
+                    "Solusi ini mencakup :"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pengiriman notifikasi whatsapp ke wajib pajak  sesuai dengan paket",
+                    "Laporan pengiriman whatsapp bulanan"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "laporan-analisa-anomali-transaksi-wajib-pajak",
+    "label": "Laporan analisa anomali transaksi wajib pajak",
+    "megaMenuChildId": "laporan-analisa-anomali-transaksi-wajib-pajak",
+    "sidebarAsFlat": true,
+    "order": 8,
+    "subMenus": [
+      {
+        "subSlug": "laporan-analisa-anomali-transaksi-wajib-pajak",
+        "title": "Laporan analisa anomali transaksi wajib pajak",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini memberikan analisa data anomali transaksi berdasarkan perilaku wajib pajak dalam bertransaksi - Tim kami akan memberikan laporan analisa anomali transaksi wajib pajak secara periodik",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Laporan ini diharapkan dapat menjadi referensi untuk kegiatan lanjutan pemda seperti uji petik",
+                  "items": [
+                    "Solusi ini mencakup :"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Laporan Anomali Transaksi"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-e-sptpd-pelaporan-dan-pembayaran-terintegrasi",
+    "label": "Sistem E- SPTPD, Pelaporan dan Pembayaran Terintegrasi",
+    "megaMenuChildId": "sistem-e-sptpd-pelaporan-dan-pembayaran-terintegrasi",
+    "sidebarAsFlat": true,
+    "order": 9,
+    "subMenus": [
+      {
+        "subSlug": "sistem-e-sptpd-pelaporan-dan-pembayaran-terintegrasi",
+        "title": "Sistem E- SPTPD, Pelaporan dan Pembayaran Terintegrasi",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini memberikan platform untuk mempermudah wajib pajak dalam melaporkan pajak hingga membayar Fitur E-SPTPD 2.0 untuk Wajib Pajak - Akses data transaksi secara langsung - Tidak perlu input data manual yang rumit - Data pelaporan dapat dipertanggungjawabkan - Generate kode bayar otomatis - Mendapatkan SSPD secara instan",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Pembayaran mudah via QRIS / Virtual Account",
+                  "items": [
+                    "Benefit Tambahan untuk Wajib Pajak"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pinjaman alat Smart EDC termasuk POS",
+                    "Kemudahan akses pinjaman dari bank"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Manfaat untuk Bank & Bapenda",
+                  "items": [
+                    "Menambah jumlah nasabah bank",
+                    "Meningkatkan jumlah WP yang transaksinya diawas",
+                    "Integrasi fitur deteksi data anomali"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini mencakup :",
+                  "items": [
+                    "Akses ke Platform Pelaporan dan Dashboard",
+                    "User Manual"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "pos-tiket-pariwisata",
+    "label": "POS Tiket pariwisata",
+    "megaMenuChildId": "pos-tiket-pariwisata",
+    "sidebarAsFlat": true,
+    "order": 10,
+    "subMenus": [
+      {
+        "subSlug": "pos-tiket-pariwisata",
+        "title": "POS Tiket pariwisata",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini bertujuan untuk menghasilkan tiket pariwisata dengan device yang tersedia",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Solusi ini menggunakan alat POS Online (Android based)",
+                    "Solusi ini meminimalisir penggunaan tiket manual",
+                    "Pembayaran tiket pariwisata bisa menggunakan tunai dan non tunai (e-Money, Qris,Ovo,Gopay, dan lainnya)",
+                    "Dapat memantau jumlah transaksi lokasi pariwisata",
+                    "Sistem ini juga terintegrasi dengan dashboard perekaman dan monitoring pajak daerah sehingga Pemda dapat melihat laporan pendapatan retribusi pariwisata secara real time"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini mencakup :",
+                  "items": [
+                    "Alat POS Online",
+                    "Akun POS",
+                    "User Manual"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-online-tiket-wahana-pariwisata",
+    "label": "Sistem Online Tiket Wahana Pariwisata",
+    "megaMenuChildId": "sistem-online-tiket-wahana-pariwisata",
+    "sidebarAsFlat": true,
+    "order": 11,
+    "subMenus": [
+      {
+        "subSlug": "sistem-online-tiket-wahana-pariwisata",
+        "title": "Sistem Online Tiket Wahana Pariwisata",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini bertujuan untuk menghasilkan tiket pariwisata dengan model booking dengan device yang tersedia",
+                  "items": [
+                    "Solusi ini terdapat website dan pos untuk dapat membeli tiket secara online",
+                    "Solusi ini dapat menjadi media marketing pariwisata daerah",
+                    "Solusi ini meminimalisir penggunaan tiket manual",
+                    "Pembayaran tiket pariwisata bisa menggunakan tunai dan non tunai QRIS",
+                    "Dapat memantau jumlah transaksi lokasi pariwisata",
+                    "Sistem ini juga terintegrasi dengan dashboard perekaman dan monitoring pajak daerah sehingga Pemda dapat melihat laporan pendapatan retribusi pariwisata secara real time"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "pos-tiket-parkir",
+    "label": "POS Tiket parkir",
+    "megaMenuChildId": "pos-tiket-parkir",
+    "sidebarAsFlat": true,
+    "order": 12,
+    "subMenus": [
+      {
+        "subSlug": "pos-tiket-parkir",
+        "title": "POS Tiket parkir",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini bertujuan untuk menghasilkan tiket parkir - off street untuk membantu operasional parkiran dari pencatatan kendaraan hingga pembayaran",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Solusi ini menggunakan alat POS Online (Android based)",
+                    "Solusi ini meminimalisir penggunaan tiket manual",
+                    "Solusi ini menghasilkan QR dan receipt yang bisa di scan kembali untuk identifikasi tiket",
+                    "Pembayaran tiket parkir bisa menggunakan tunai dan non tunai (e-Money, Qris,Ovo,Gopay, dan lainnya)",
+                    "Dapat memantau jumlah transaksi parkir",
+                    "Sistem ini juga terintegrasi dengan dashboard perekaman dan monitoring pajak daerah sehingga Pemda dapat melihat laporan pendapatan retribusi parkir  secara real time"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini mencakup :",
+                  "items": [
+                    "Alat POS Online",
+                    "Aplikasi dan akun Zeepos Parkir",
+                    "User Manual penggunaan Aplikasi Zeepos Parkir"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "pos-hotel",
+    "label": "POS Hotel",
+    "megaMenuChildId": "pos-hotel",
+    "sidebarAsFlat": true,
+    "order": 13,
+    "subMenus": [
+      {
+        "subSlug": "pos-hotel",
+        "title": "POS Hotel",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Solusi ini bertujuan untuk memberikan sistem operasional hotel, dari registrasi, housekeeping, pembayaran dll. - Solusi ini menggunakan alat web based application - Solusi ini mencakup fitur-fitur esensial operasional hotel - Terdapat laporan-laporan untuk kegiatan - Sistem ini juga terintegrasi dengan dashboard perekaman dan monitoring pajak daerah sehingga Pemda dapat melihat laporan pendapatan retribusi pariwisata secara real time Solusi ini mencakup : - Akses dan akun ke Zeepos Hotel",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "User Manual",
+                  "items": [
+                    "Fitur"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Reservation & Room Management",
+                    "Interactive Density Chart showing room availability",
+                    "Comprehensive reservation system with booking details, rate options, and guest information",
+                    "Room status tracking (available, hold, reserved, check-in, check-out)",
+                    "Room extension and service add-on capabilities",
+                    "Guest Experience Management",
+                    "Detailed guest profiles and history",
+                    "In-house guest tracking",
+                    "Financial Management",
+                    "Operational Reporting",
+                    "Customization & Settings",
+                    "Flexible rate management (default, seasonal)",
+                    "etc"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-pembayaran-zeepos-pay",
+    "label": "Sistem Pembayaran Zeepos Pay",
+    "megaMenuChildId": "sistem-pembayaran-zeepos-pay",
+    "sidebarAsFlat": true,
+    "order": 14,
+    "subMenus": [
+      {
+        "subSlug": "sistem-pembayaran-zeepos-pay",
+        "title": "Sistem Pembayaran Zeepos Pay",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Solusi ini memberikan fleksibilitas metode pembayaran untuk mempermudah penetrasi pemasangan dan perekaman transaksi wajib pajak",
+                  "items": [
+                    "Terdapat berbagai prepaid card yang bisa digunakan, namun yang dapat aktif satu tipe per alat",
+                    "Untuk menggunakan fitur ini, wajib pajak harus membuka akun Zeepos Pay"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-mini-atm-ppob",
+    "label": "Sistem Mini ATM & PPOB",
+    "megaMenuChildId": "sistem-mini-atm-ppob",
+    "sidebarAsFlat": true,
+    "order": 15,
+    "subMenus": [
+      {
+        "subSlug": "sistem-mini-atm-ppob",
+        "title": "Sistem Mini ATM & PPOB",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Device Cartenz memiliki fitur PPOB dan Mini ATM untuk mempermudah penetrasi dalam perekaman transaksi wajib pajak Fitur 1. Check Balance 2. Cash Withdrawal 3. Interbank Transfer 4. Bill Payment",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "sistem-qris-dashboard-untuk-perbankan",
+    "label": "Sistem QRIS & Dashboard untuk Perbankan",
+    "megaMenuChildId": "sistem-qris-dashboard-untuk-perbankan",
+    "sidebarAsFlat": true,
+    "order": 16,
+    "subMenus": [
+      {
+        "subSlug": "sistem-qris-dashboard-untuk-perbankan",
+        "title": "Sistem QRIS & Dashboard untuk Perbankan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Device Cartenz dapat diintegrasikan dengan QRIS milik bank sehingga pengendapan dana bisa terjadi di Bank terkait - Bank akan diberikan Dashboard QRIS untuk dapat memantau pembayaran dan rekonsiliasi",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Cartenz akan melakukan integrasi QRIS ke bank terkait.",
+                  "items": [
+                    "Solusi ini mencakup :"
+                  ]
+                },
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "User Manual",
+                    "Multi-user akses dashboard",
+                    "API Integration"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

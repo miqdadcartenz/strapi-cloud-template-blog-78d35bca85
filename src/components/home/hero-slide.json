@@ -23,6 +23,9 @@
     },
     "linkProdukHero": {
       "type": "string"
+    },
+    "show": {
+      "type": "boolean"
     }
   }
 }

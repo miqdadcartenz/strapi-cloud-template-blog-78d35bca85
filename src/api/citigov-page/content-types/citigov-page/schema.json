@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "citigov_pages",
+  "info": {
+    "singularName": "citigov-page",
+    "pluralName": "citigov-pages",
+    "displayName": "Citigov Page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Hero": {
+      "type": "component",
+      "component": "product-page.hero",
+      "repeatable": false
+    },
+    "Klien": {
+      "type": "component",
+      "component": "citigov-klien.citigov-klien-section",
+      "repeatable": false
+    }
+  }
+}

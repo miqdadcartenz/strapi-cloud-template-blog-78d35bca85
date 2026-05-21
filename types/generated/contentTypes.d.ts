@@ -564,6 +564,72 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCitigovDetailCategoryCitigovDetailCategory
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'citigov_detail_categories';
+  info: {
+    displayName: 'Citigov Detail Category';
+    pluralName: 'citigov-detail-categories';
+    singularName: 'citigov-detail-category';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoryId: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    label: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::citigov-detail-category.citigov-detail-category'
+    > &
+      Schema.Attribute.Private;
+    megaMenuChildId: Schema.Attribute.String;
+    order: Schema.Attribute.Integer;
+    publishedAt: Schema.Attribute.DateTime;
+    sidebarAsFlat: Schema.Attribute.Boolean;
+    subMenus: Schema.Attribute.Component<'product-page.sub-menu', true>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCitigovPageCitigovPage extends Struct.SingleTypeSchema {
+  collectionName: 'citigov_pages';
+  info: {
+    displayName: 'Citigov Page';
+    pluralName: 'citigov-pages';
+    singularName: 'citigov-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Hero: Schema.Attribute.Component<'product-page.hero', false>;
+    Klien: Schema.Attribute.Component<
+      'citigov-klien.citigov-klien-section',
+      false
+    >;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::citigov-page.citigov-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiClientClient extends Struct.CollectionTypeSchema {
   collectionName: 'clients';
   info: {
@@ -1609,6 +1675,8 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::citigov-detail-category.citigov-detail-category': ApiCitigovDetailCategoryCitigovDetailCategory;
+      'api::citigov-page.citigov-page': ApiCitigovPageCitigovPage;
       'api::client.client': ApiClientClient;
       'api::efd-detail-category.efd-detail-category': ApiEfdDetailCategoryEfdDetailCategory;
       'api::efd-page.efd-page': ApiEfdPageEfdPage;

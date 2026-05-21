@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_citigov_klien_citigov_klien_cards",
+  "info": {
+    "displayName": "Citigov Klien Card"
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "nama_daerah": {
+      "type": "string"
+    },
+    "produk_url": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

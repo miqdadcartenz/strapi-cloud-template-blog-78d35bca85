@@ -298,6 +298,8 @@ async function importSeedData() {
     'efd-detail-category': ['find', 'findOne'],
     'palapa-page': ['find', 'findOne'],
     'palapa-detail-category': ['find', 'findOne'],
+    'citigov-page': ['find', 'findOne'],
+    'citigov-detail-category': ['find', 'findOne'],
     'strategic-consulting-page': ['find', 'findOne'],
   });
 

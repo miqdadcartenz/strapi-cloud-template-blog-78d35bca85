@@ -1,0 +1,181 @@
+[
+  {
+    "categoryId": "solusi-layanan-digital-inklusif-tepat-guna",
+    "label": "Solusi Layanan Digital Inklusif Tepat Guna",
+    "megaMenuChildId": "solusi-layanan-digital-inklusif-tepat-guna",
+    "sidebarAsFlat": true,
+    "order": 1,
+    "subMenus": [
+      {
+        "subSlug": "solusi-layanan-digital-inklusif-tepat-guna",
+        "title": "Solusi Layanan Digital Inklusif Tepat Guna",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Citigov dirancang secara fleksibel untuk menyesuaikan kebutuhan di lapangan, serta mudah digunakan oleh siapa saja, termasuk mereka yang tidak memiliki mengerti teknologi",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pemerintah dapat membuat layanan digital tanpa memerlukan coding.",
+                    "Pengaturan jam layanan, kuota layanan, hingga cetakan layanan.",
+                    "Layanan dapat untuk keperluan internal pemerintah maupun masyarakat.",
+                    "Citigov Pengajuan layanan secara online melalui web, Android, dan iOS.",
+                    "Pelayanan langsung di kantor pemerintah.",
+                    "Pelayanan dan pendataan lapangan dengan dukungan fitur offline-online.",
+                    "Sistem antrian digital yang efisien.",
+                    "Penyediaan informasi yang mudah diakses, lengkap, dan terstruktur.",
+                    "Sistem pencegahan calo."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "solusi-pemerintah-berbasis-ai",
+    "label": "Solusi Pemerintah Berbasis AI",
+    "megaMenuChildId": "solusi-pemerintah-berbasis-ai",
+    "sidebarAsFlat": true,
+    "order": 2,
+    "subMenus": [
+      {
+        "subSlug": "solusi-pemerintah-berbasis-ai",
+        "title": "Solusi Pemerintah Berbasis AI",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Citigov memanfaatkan teknologi AI untuk menghadirkan layanan yang optimal, mulai dari penyediaan informasi hingga proses pelayanan yang sepenuhnya berada dalam kendali pemerintah.",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "",
+                  "items": [
+                    "Pemerintah dapat mengelola sumber data dan informasi secara mandiri.",
+                    "Pemerintah memiliki kewenangan penuh untuk mengatur profil dan perilaku AI sesuai kebutuhan._x000B_Setiap layanan yang dibuat dapat dikonfigurasi agar terintegrasi dengan AI untuk meningkatkan efisiensi dan akurasi.",
+                    "Sistem dapat terhubung dengan chatbot WhatsApp untuk mempermudah pelayanan secara langsung kepada masyarakat.",
+                    "AI memiliki kemampuan untuk memahami dan mengurai alur layanan, sehingga dapat memberikan respon otomatis yang relevan dan membantu proses pelayanan."
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "solusi-penilaian-kinerja-pelayanan-asn",
+    "label": "Solusi Penilaian Kinerja Pelayanan ASN",
+    "megaMenuChildId": "solusi-penilaian-kinerja-pelayanan-asn",
+    "sidebarAsFlat": true,
+    "order": 3,
+    "subMenus": [
+      {
+        "subSlug": "solusi-penilaian-kinerja-pelayanan-asn",
+        "title": "Solusi Penilaian Kinerja Pelayanan ASN",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "",
+              "details": null,
+              "blocks": [
+                {
+                  "__component": "product-page.block-list",
+                  "title": "Citigov menjadi solusi objektif penilaian kinerja ASN berbasis SLA, dari tingkat dinas hingga petugas, untuk mengidentifikasi top performer dan area yang perlu ditingkatkan.",
+                  "items": [
+                    "Dashboard jumlah pelayanan baru, proses, selesai, tolak, batal.",
+                    "Pemerintah dapat mengatur SLA tiap layanan dan petugas.",
+                    "Dashboard SLA layanan dan SLA petugas.",
+                    "Tracking layanan yang belum baru, proses, selesai, tolak, batal.",
+                    "Rata - rata waktu layanan",
+                    "Informasi petugas terbaik dan terburuk",
+                    "Informasi pemohon paling banyak"
+                  ]
+                }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "solusi-survei-kepuasan-masyarakat",
+    "label": "Solusi Survei Kepuasan Masyarakat",
+    "megaMenuChildId": "solusi-survei-kepuasan-masyarakat",
+    "sidebarAsFlat": true,
+    "order": 4,
+    "subMenus": [
+      {
+        "subSlug": "solusi-survei-kepuasan-masyarakat",
+        "title": "Solusi Survei Kepuasan Masyarakat",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Kepala Daerah dapat langsung memantau tingkat kepuasan masyarakat terhadap kinerja masing-masing OPD melalui dashboard Survei Kepuasan Masyarakat, sebagai dasar evaluasi dan peningkatan pelayanan publik.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "solusi-pelayanan-digital-dengan-e-kiosk",
+    "label": "Solusi Pelayanan Digital dengan E-KIOSK",
+    "megaMenuChildId": "solusi-pelayanan-digital-dengan-e-kiosk",
+    "sidebarAsFlat": true,
+    "order": 5,
+    "subMenus": [
+      {
+        "subSlug": "solusi-pelayanan-digital-dengan-e-kiosk",
+        "title": "Solusi Pelayanan Digital dengan E-KIOSK",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Salah satu yang sering dilupakan dari pembangunan digitalisasi adalah faktor kebiasaan dimana banyak Masyarakat yang masih suka untuk melakukan tatap muka secara langsung untuk mendapatkan layanan. KIOSK adalah solusi yang dapat digunakan karena dapat ditempatkan ditiap desa/kelurahan",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "solusi-pelayanan-digital-dengan-chatbot-whatsapp",
+    "label": "Solusi Pelayanan Digital dengan ChatBot WhatsApp",
+    "megaMenuChildId": "solusi-pelayanan-digital-dengan-chatbot-whatsapp",
+    "sidebarAsFlat": true,
+    "order": 6,
+    "subMenus": [
+      {
+        "subSlug": "solusi-pelayanan-digital-dengan-chatbot-whatsapp",
+        "title": "Solusi Pelayanan Digital dengan ChatBot WhatsApp",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Whatsapp sudah sangat familiar digunakan berbagai kalangan, tentunya akan sangat memudahkan bila pelayanan dapat dilakukan melalui whatsapp. Whatsapp juga dapat menjadi solusi untuk wilayah yang susah sinyal karena masyarakat tidak perlu lagi harus akses website ataupun mengunduh aplikasi",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

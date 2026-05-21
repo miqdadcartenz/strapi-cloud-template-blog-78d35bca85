@@ -1,7 +1,7 @@
 'use strict';
 
 /**
- * Menambah permission Public untuk API halaman produk (smartgov, efd, palapa, strategic-consulting).
+ * Menambah permission Public untuk API halaman produk (smartgov, efd, palapa, citigov, strategic-consulting).
  * Jalankan sekali jika frontend dapat 403 Forbidden saat fetch API produk.
  *
  * Usage: node ./scripts/add-product-permissions.js
@@ -17,6 +17,8 @@ const productPermissions = {
   'efd-detail-category': ['find', 'findOne'],
   'palapa-page': ['find', 'findOne'],
   'palapa-detail-category': ['find', 'findOne'],
+  'citigov-page': ['find', 'findOne'],
+  'citigov-detail-category': ['find', 'findOne'],
   'strategic-consulting-page': ['find', 'findOne'],
 };
 

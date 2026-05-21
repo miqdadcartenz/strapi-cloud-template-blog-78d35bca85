@@ -1,0 +1,347 @@
+[
+  {
+    "categoryId": "command-center-kepala-daerah",
+    "label": "Command Center Kepala Daerah",
+    "megaMenuChildId": "command-center-kepala-daerah",
+    "sidebarAsFlat": true,
+    "order": 1,
+    "subMenus": [
+      {
+        "subSlug": "command-center-kepala-daerah",
+        "title": "Command Center Kepala Daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Dengan PALAPA, kepala daerah dapat memantau seluruh progres program dari berbagai OPD dalam satu tampilan terpadu yang sederhana namun menyeluruh. Tidak perlu lagi menunggu laporan berjenjang yang sering terlambat atau tidak lengkap, karena setiap aktivitas yang dilakukan di lapangan langsung membentuk gambaran capaian secara real-time. Ketika ada program yang melambat, tidak berjalan, atau keluar dari target, kondisi tersebut langsung terlihat dan bisa segera ditindaklanjuti. Hal ini membuat pengambilan keputusan menjadi jauh lebih cepat, tepat, dan berbasis data nyata. Di sisi lain, OPD terdorong untuk bekerja lebih disiplin dan terarah karena capaian mereka terlihat secara terbuka. Dampaknya adalah percepatan program prioritas, pengendalian yang lebih kuat, serta hasil pembangunan yang lebih terukur dan dapat dirasakan langsung oleh masyarakat.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "onegov-connect",
+    "label": "OneGov Connect",
+    "megaMenuChildId": "onegov-connect",
+    "sidebarAsFlat": true,
+    "order": 2,
+    "subMenus": [
+      {
+        "subSlug": "onegov-connect",
+        "title": "OneGov Connect",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA berfungsi sebagai penghubung berbagai sistem dan layanan yang sudah ada di lingkungan pemerintah tanpa perlu mengganti atau membangun ulang dari awal. Sistem yang sebelumnya berjalan sendiri-sendiri kini dapat saling terhubung dalam satu ekosistem yang lebih rapi dan efisien. Kepala daerah mendapatkan gambaran yang utuh terhadap seluruh layanan pemerintah tanpa harus melihat banyak sistem yang terpisah. Dari sisi anggaran, pendekatan ini jauh lebih efisien karena memanfaatkan sistem yang sudah ada. Dari sisi pelaksanaan, kebijakan dapat dijalankan lebih cepat karena tidak perlu membangun fondasi dari nol. Dampaknya adalah koordinasi lintas OPD menjadi lebih kuat, proses kerja lebih sederhana, dan pelayanan kepada masyarakat menjadi lebih terintegrasi serta mudah diakses.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "live-program-tracker",
+    "label": "Live Program Tracker",
+    "megaMenuChildId": "live-program-tracker",
+    "sidebarAsFlat": true,
+    "order": 3,
+    "subMenus": [
+      {
+        "subSlug": "live-program-tracker",
+        "title": "Live Program Tracker",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA menyederhanakan proses pelaporan program dari berbagai level menjadi satu sistem yang terhubung dan berjalan secara otomatis. Data kegiatan tidak lagi dikumpulkan secara manual di akhir periode, melainkan tercatat saat kegiatan berlangsung di lapangan. Hal ini membuat laporan menjadi lebih akurat, tidak tertunda, dan dapat langsung digunakan untuk evaluasi. Kepala daerah dapat melihat capaian program secara real-time tanpa harus menunggu rekap berhari-hari. OPD juga tidak perlu lagi mengulang pekerjaan administratif karena data sudah tercatat sejak awal. Dampaknya adalah proses evaluasi yang lebih cepat, perbaikan yang bisa dilakukan segera, serta program yang berjalan lebih efektif dan dapat dipertanggungjawabkan dengan data yang jelas.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "layanan-pajak-daerah",
+    "label": "Layanan Pajak Daerah",
+    "megaMenuChildId": "layanan-pajak-daerah",
+    "sidebarAsFlat": true,
+    "order": 4,
+    "subMenus": [
+      {
+        "subSlug": "layanan-pajak-daerah",
+        "title": "Layanan Pajak Daerah",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "Dengan PALAPA, pengelolaan pajak daerah menjadi lebih transparan dan terstruktur karena seluruh aktivitas, mulai dari pendataan objek pajak hingga pelayanan dan pembayaran, tercatat dalam satu sistem. Kepala daerah dapat melihat potensi pendapatan secara lebih jelas, termasuk wilayah mana yang optimal dan mana yang masih perlu ditingkatkan. Hal ini memudahkan dalam menyusun strategi peningkatan pendapatan yang lebih tepat sasaran. Di sisi lain, transparansi sistem juga meningkatkan kepercayaan masyarakat terhadap pelayanan pajak. Bagi dinas, monitoring menjadi lebih mudah tanpa harus menggabungkan data dari berbagai sumber. Dampaknya adalah peningkatan pendapatan daerah yang lebih terarah, pelayanan yang lebih tertib, dan sistem yang lebih dipercaya oleh masyarakat.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "kelola-aset",
+    "label": "Kelola Aset",
+    "megaMenuChildId": "kelola-aset",
+    "sidebarAsFlat": true,
+    "order": 5,
+    "subMenus": [
+      {
+        "subSlug": "kelola-aset",
+        "title": "Kelola Aset",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu pemerintah mengelola aset daerah secara terpusat dan terstruktur, mulai dari pencatatan, lokasi, kondisi, hingga pemanfaatannya. Aset yang sebelumnya tersebar atau tidak terdokumentasi dengan baik kini dapat dipantau dalam satu sistem yang mudah diakses. Kepala daerah dapat melihat potensi aset yang belum dimanfaatkan secara optimal dan mengambil keputusan strategis untuk meningkatkan nilai guna aset tersebut. Hal ini membuka peluang untuk optimalisasi pendapatan daerah tanpa harus menambah sumber baru. Bagi dinas, pengelolaan menjadi lebih tertib dan transparan. Dampaknya adalah peningkatan efisiensi pengelolaan aset, pemanfaatan yang lebih maksimal, dan kontribusi nyata terhadap pendapatan daerah.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "arsip-tanpa-nyelip",
+    "label": "Arsip tanpa nyelip",
+    "megaMenuChildId": "arsip-tanpa-nyelip",
+    "sidebarAsFlat": true,
+    "order": 6,
+    "subMenus": [
+      {
+        "subSlug": "arsip-tanpa-nyelip",
+        "title": "Arsip tanpa nyelip",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA merapikan pengelolaan dokumen pemerintahan, baik untuk kebutuhan internal maupun publik, dalam satu sistem yang terstruktur. Dokumen tidak lagi tersebar atau sulit ditemukan, melainkan tersimpan dengan rapi, memiliki versi yang jelas, dan mudah diakses sesuai kebutuhan. Kepala daerah dapat memastikan bahwa seluruh kebijakan dan regulasi terdokumentasi dengan baik dan dapat digunakan sebagai dasar pengambilan keputusan. Di sisi lain, masyarakat juga mendapatkan akses yang lebih mudah terhadap dokumen publik seperti peraturan daerah. Dampaknya adalah transparansi yang meningkat, tata kelola yang lebih tertib, serta kepercayaan publik yang semakin kuat terhadap pemerintah.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "hilirisasi-industri",
+    "label": "Hilirisasi Industri",
+    "megaMenuChildId": "hilirisasi-industri",
+    "sidebarAsFlat": true,
+    "order": 7,
+    "subMenus": [
+      {
+        "subSlug": "hilirisasi-industri",
+        "title": "Hilirisasi Industri",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu pemerintah dalam melihat potensi industri daerah secara lebih menyeluruh melalui data yang terstruktur dan mudah dipahami. Informasi terkait produksi, distribusi, hingga hambatan di lapangan dapat tercatat dan dipantau dalam satu sistem, sehingga tidak lagi tersebar di berbagai laporan yang sulit dirangkum. Kepala daerah dapat mengetahui sektor mana yang berkembang, mana yang perlu didorong, dan di mana intervensi perlu dilakukan. Hal ini membuat kebijakan yang diambil menjadi lebih tepat sasaran dan tidak hanya berdasarkan asumsi. Bagi dinas, koordinasi menjadi lebih mudah karena data yang digunakan sama. Dampaknya adalah penguatan sektor industri daerah, peningkatan nilai tambah produk lokal, serta terbukanya peluang ekonomi yang lebih luas bagi masyarakat.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "swasembada-pangan",
+    "label": "Swasembada Pangan",
+    "megaMenuChildId": "swasembada-pangan",
+    "sidebarAsFlat": true,
+    "order": 8,
+    "subMenus": [
+      {
+        "subSlug": "swasembada-pangan",
+        "title": "Swasembada Pangan",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu mencatat dan memantau aktivitas pertanian secara berkelanjutan, mulai dari proses tanam, panen, hingga distribusi hasil. Data yang masuk berasal dari aktivitas nyata di lapangan, sehingga memberikan gambaran kondisi pangan yang lebih akurat dan tidak sekadar perkiraan. Kepala daerah dapat melihat perkembangan produksi secara langsung dan mengetahui wilayah mana yang membutuhkan perhatian lebih. Dengan informasi ini, intervensi seperti bantuan benih, pupuk, atau distribusi dapat dilakukan lebih tepat waktu. Bagi dinas, perencanaan menjadi lebih mudah karena didukung data yang jelas. Dampaknya adalah ketahanan pangan yang lebih terjaga, pengambilan kebijakan yang lebih tepat, serta peningkatan kesejahteraan petani melalui program yang lebih terarah.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "e-kinerja-asn",
+    "label": "e-Kinerja ASN",
+    "megaMenuChildId": "e-kinerja-asn",
+    "sidebarAsFlat": true,
+    "order": 9,
+    "subMenus": [
+      {
+        "subSlug": "e-kinerja-asn",
+        "title": "e-Kinerja ASN",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA mencatat aktivitas kerja ASN secara otomatis sebagai bagian dari proses layanan yang mereka jalankan setiap hari, sehingga tidak menambah beban administrasi baru. Dari aktivitas tersebut terbentuk gambaran kinerja yang objektif dan dapat dilihat secara langsung oleh pimpinan. Tidak lagi bergantung pada laporan manual yang seringkali subjektif, karena data yang digunakan berasal dari aktivitas nyata. Pimpinan dapat mengetahui siapa yang aktif, bagaimana capaian unit kerja, dan di mana perlu dilakukan perbaikan. Bagi ASN, sistem ini memberikan kejelasan terhadap pekerjaan yang dilakukan karena semuanya tercatat dengan baik. Dampaknya adalah peningkatan produktivitas, penilaian kinerja yang lebih adil, serta terciptanya budaya kerja yang lebih transparan dan terarah.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "keamanan-perlindungan-asn",
+    "label": "Keamanan & Perlindungan ASN",
+    "megaMenuChildId": "keamanan-perlindungan-asn",
+    "sidebarAsFlat": true,
+    "order": 10,
+    "subMenus": [
+      {
+        "subSlug": "keamanan-perlindungan-asn",
+        "title": "Keamanan & Perlindungan ASN",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA tidak hanya berfokus pada keamanan sistem, tetapi juga memberikan perlindungan bagi ASN dalam menjalankan tugasnya melalui mekanisme kerja yang tertib dan transparan. Setiap layanan memiliki alur yang jelas, jadwal yang teratur, dan proses yang terdokumentasi, sehingga mengurangi potensi kesalahpahaman maupun tekanan dari pihak luar. Dengan sistem yang rapi, praktik seperti percaloan atau intervensi tidak resmi dapat diminimalkan karena semua proses memiliki jejak yang dapat ditelusuri. ASN dapat bekerja dengan lebih tenang karena mengikuti prosedur yang sudah jelas. Dampaknya adalah peningkatan profesionalisme, berkurangnya konflik di lapangan, serta terciptanya lingkungan kerja yang lebih aman dan nyaman bagi aparatur.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "pintu-cepat-investasi",
+    "label": "Pintu cepat investasi",
+    "megaMenuChildId": "pintu-cepat-investasi",
+    "sidebarAsFlat": true,
+    "order": 11,
+    "subMenus": [
+      {
+        "subSlug": "pintu-cepat-investasi",
+        "title": "Pintu cepat investasi",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu menata proses perizinan menjadi lebih jelas dan terukur melalui alur yang dapat dipantau dari awal hingga selesai. Setiap tahapan proses terlihat dengan transparan, sehingga jika terjadi keterlambatan atau hambatan dapat segera diketahui dan diperbaiki. ASN tidak perlu lagi melakukan pengecekan manual yang memakan waktu, karena seluruh proses sudah tercatat dalam sistem. Bagi pelaku usaha, hal ini memberikan kepastian waktu dan kejelasan proses, sehingga mereka tidak merasa kebingungan atau harus bolak-balik. Dampaknya adalah peningkatan kualitas layanan perizinan, tumbuhnya kepercayaan dunia usaha, serta terciptanya iklim investasi yang lebih kondusif di daerah.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "umkm-makin-keren",
+    "label": "UMKM makin keren",
+    "megaMenuChildId": "umkm-makin-keren",
+    "sidebarAsFlat": true,
+    "order": 12,
+    "subMenus": [
+      {
+        "subSlug": "umkm-makin-keren",
+        "title": "UMKM makin keren",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu pemerintah dalam mendata dan memantau pelaku usaha serta potensi investasi secara lebih terstruktur. Informasi seperti jenis usaha, lokasi, hingga perkembangan usaha dapat terlihat dalam satu sistem yang mudah dipahami. Hal ini memudahkan dinas dalam menyusun program pembinaan, promosi, maupun intervensi yang lebih tepat sasaran. Kepala daerah juga dapat melihat potensi ekonomi daerah secara lebih nyata, bukan hanya berdasarkan laporan umum. Bagi pelaku usaha, keberadaan sistem ini membuka akses yang lebih luas terhadap dukungan pemerintah. Dampaknya adalah pertumbuhan UMKM yang lebih terarah, peningkatan daya saing daerah, serta terbukanya peluang investasi yang lebih besar.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "urusan-dukcapil-makin-tertib-dan-gampil",
+    "label": "Urusan Dukcapil makin tertib dan gampil",
+    "megaMenuChildId": "urusan-dukcapil-makin-tertib-dan-gampil",
+    "sidebarAsFlat": true,
+    "order": 13,
+    "subMenus": [
+      {
+        "subSlug": "urusan-dukcapil-makin-tertib-dan-gampil",
+        "title": "Urusan Dukcapil makin tertib dan gampil",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu menata layanan administrasi kependudukan menjadi lebih tertib melalui pengaturan antrean terjadwal dan pengajuan layanan secara digital. Layanan seperti KTP, KK, atau akta tidak lagi menumpuk di waktu tertentu karena kuota dan jadwal sudah diatur sejak awal. Masyarakat dapat memilih waktu kedatangan sesuai ketersediaan, sehingga tidak perlu antre panjang atau datang terlalu pagi. Bagi ASN, hal ini membuat ritme pelayanan lebih stabil dan tidak kewalahan menghadapi lonjakan pemohon di satu waktu. Selain itu, setiap layanan yang diproses tercatat dalam sistem, sehingga memudahkan monitoring dan evaluasi. Dampaknya adalah pelayanan yang lebih cepat, tertib, dan nyaman bagi masyarakat, sekaligus membantu dinas meningkatkan kualitas layanan tanpa menambah beban kerja secara signifikan.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "satu-lahir-lima-terbit",
+    "label": "Satu lahir Lima Terbit",
+    "megaMenuChildId": "satu-lahir-lima-terbit",
+    "sidebarAsFlat": true,
+    "order": 14,
+    "subMenus": [
+      {
+        "subSlug": "satu-lahir-lima-terbit",
+        "title": "Satu lahir Lima Terbit",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA menghubungkan layanan antara rumah sakit dan Dukcapil dalam satu alur yang lebih sederhana dan terintegrasi, khususnya untuk layanan kelahiran. Data yang dibutuhkan dapat langsung diproses sejak di rumah sakit tanpa harus menunggu warga mengurus secara terpisah. Proses penerbitan dokumen seperti akta kelahiran, KK, dan KIA menjadi lebih cepat karena koordinasi antar instansi sudah difasilitasi dalam sistem. Bagi ASN, hal ini mengurangi beban koordinasi manual yang biasanya memakan waktu dan rawan kesalahan. Sementara bagi masyarakat, layanan menjadi jauh lebih praktis karena tidak perlu bolak-balik ke beberapa tempat. Dampaknya adalah percepatan pelayanan, peningkatan kepuasan masyarakat, serta efisiensi kerja lintas instansi yang lebih terasa nyata.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "categoryId": "layanan-sehat-yang-sehat",
+    "label": "Layanan Sehat yang Sehat",
+    "megaMenuChildId": "layanan-sehat-yang-sehat",
+    "sidebarAsFlat": true,
+    "order": 15,
+    "subMenus": [
+      {
+        "subSlug": "layanan-sehat-yang-sehat",
+        "title": "Layanan Sehat yang Sehat",
+        "tabs": [
+          {
+            "tabLabel": "",
+            "content": {
+              "description": "PALAPA membantu mengatur antrean dan pencatatan layanan kesehatan di puskesmas secara lebih terstruktur. Pasien dapat mengetahui estimasi waktu pelayanan sebelum datang, sehingga tidak perlu menunggu lama atau berdesakan di lokasi. Di sisi lain, petugas kesehatan dapat fokus melayani karena alur pasien sudah lebih tertata. Setiap kunjungan dan layanan yang diberikan juga tercatat dalam sistem, sehingga memudahkan pemantauan jumlah pasien dan jenis layanan yang paling banyak dibutuhkan. Bagi dinas, data ini sangat membantu dalam perencanaan dan distribusi sumber daya. Dampaknya adalah pelayanan kesehatan yang lebih cepat, tertib, dan manusiawi, serta pengelolaan fasilitas kesehatan yang lebih efisien dan terukur.",
+              "details": null,
+              "blocks": []
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
